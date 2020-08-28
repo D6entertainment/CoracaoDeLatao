@@ -1,0 +1,1879 @@
+fileFormatVersion: 2
+guid: 0f9b7c186f9d31c409cb311e82823b60
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3984645271797095226
+    second: "Mem\xF3ria - Sprite Sheet_0"
+  - first:
+      213: -9162503672165372021
+    second: "Mem\xF3ria - Sprite Sheet_1"
+  - first:
+      213: 7337111775679557541
+    second: "Mem\xF3ria - Sprite Sheet_2"
+  - first:
+      213: 2560679849476235504
+    second: "Mem\xF3ria - Sprite Sheet_3"
+  - first:
+      213: 8437360743094293652
+    second: "Mem\xF3ria - Sprite Sheet_4"
+  - first:
+      213: -8551147823474644853
+    second: "Mem\xF3ria - Sprite Sheet_5"
+  - first:
+      213: 4446558366185736324
+    second: "Mem\xF3ria - Sprite Sheet_6"
+  - first:
+      213: -6234722404010337794
+    second: "Mem\xF3ria - Sprite Sheet_7"
+  - first:
+      213: -5071631540599185540
+    second: "Mem\xF3ria - Sprite Sheet_8"
+  - first:
+      213: 7553569957274230288
+    second: "Mem\xF3ria - Sprite Sheet_9"
+  - first:
+      213: 7194883151032174846
+    second: "Mem\xF3ria - Sprite Sheet_10"
+  - first:
+      213: 5083988706035230184
+    second: "Mem\xF3ria - Sprite Sheet_11"
+  - first:
+      213: -7033817638651103478
+    second: "Mem\xF3ria - Sprite Sheet_12"
+  - first:
+      213: 6909942469377889176
+    second: "Mem\xF3ria - Sprite Sheet_13"
+  - first:
+      213: 2250805464512866984
+    second: "Mem\xF3ria - Sprite Sheet_14"
+  - first:
+      213: -1106511202350347650
+    second: "Mem\xF3ria - Sprite Sheet_15"
+  - first:
+      213: -6074368381228877849
+    second: "Mem\xF3ria - Sprite Sheet_16"
+  - first:
+      213: 7734934427379924470
+    second: "Mem\xF3ria - Sprite Sheet_17"
+  - first:
+      213: -1165337320643904928
+    second: "Mem\xF3ria - Sprite Sheet_18"
+  - first:
+      213: -4371032035943559526
+    second: "Mem\xF3ria - Sprite Sheet_19"
+  - first:
+      213: 1534442236280265586
+    second: "Mem\xF3ria - Sprite Sheet_20"
+  - first:
+      213: -1408327532542821315
+    second: "Mem\xF3ria - Sprite Sheet_21"
+  - first:
+      213: -4688937276445923869
+    second: "Mem\xF3ria - Sprite Sheet_22"
+  - first:
+      213: -6572758797390662863
+    second: "Mem\xF3ria - Sprite Sheet_23"
+  - first:
+      213: -2699260859678330869
+    second: "Mem\xF3ria - Sprite Sheet_24"
+  - first:
+      213: 8782473122669364650
+    second: "Mem\xF3ria - Sprite Sheet_25"
+  - first:
+      213: -5758818170948862144
+    second: "Mem\xF3ria - Sprite Sheet_26"
+  - first:
+      213: -4545466109477322846
+    second: "Mem\xF3ria - Sprite Sheet_27"
+  - first:
+      213: 7052755397130151507
+    second: "Mem\xF3ria - Sprite Sheet_28"
+  - first:
+      213: 4581605259028145445
+    second: "Mem\xF3ria - Sprite Sheet_29"
+  - first:
+      213: 4966201859731799212
+    second: "Mem\xF3ria - Sprite Sheet_30"
+  - first:
+      213: 4054744093474537389
+    second: "Mem\xF3ria - Sprite Sheet_31"
+  - first:
+      213: -2297985807667875744
+    second: "Mem\xF3ria - Sprite Sheet_32"
+  - first:
+      213: 4259880078395370125
+    second: "Mem\xF3ria - Sprite Sheet_33"
+  - first:
+      213: -3006396282690074873
+    second: "Mem\xF3ria - Sprite Sheet_34"
+  - first:
+      213: 4339841473756210568
+    second: "Mem\xF3ria - Sprite Sheet_35"
+  - first:
+      213: -1326383607918052552
+    second: "Mem\xF3ria - Sprite Sheet_36"
+  - first:
+      213: 1670190993319689219
+    second: "Mem\xF3ria - Sprite Sheet_37"
+  - first:
+      213: -2589678761665451075
+    second: "Mem\xF3ria - Sprite Sheet_38"
+  - first:
+      213: 2566310517131128565
+    second: "Mem\xF3ria - Sprite Sheet_39"
+  - first:
+      213: -5429399836933708859
+    second: "Mem\xF3ria - Sprite Sheet_40"
+  - first:
+      213: -5033678595869961824
+    second: "Mem\xF3ria - Sprite Sheet_41"
+  - first:
+      213: 6007447520254577096
+    second: "Mem\xF3ria - Sprite Sheet_42"
+  - first:
+      213: -2260376996979977519
+    second: "Mem\xF3ria - Sprite Sheet_43"
+  - first:
+      213: 6701167499127095983
+    second: "Mem\xF3ria - Sprite Sheet_44"
+  - first:
+      213: 8834141202992444508
+    second: "Mem\xF3ria - Sprite Sheet_45"
+  - first:
+      213: -6048130828639254421
+    second: "Mem\xF3ria - Sprite Sheet_46"
+  - first:
+      213: -4269066270178620172
+    second: "Mem\xF3ria - Sprite Sheet_47"
+  - first:
+      213: 8280768623793203677
+    second: "Mem\xF3ria - Sprite Sheet_48"
+  - first:
+      213: 8554455766378698508
+    second: "Mem\xF3ria - Sprite Sheet_49"
+  - first:
+      213: 6068095346455889497
+    second: "Mem\xF3ria - Sprite Sheet_50"
+  - first:
+      213: 1502303185484413125
+    second: "Mem\xF3ria - Sprite Sheet_51"
+  - first:
+      213: -1464141596039753786
+    second: "Mem\xF3ria - Sprite Sheet_52"
+  - first:
+      213: -7681411577733816305
+    second: "Mem\xF3ria - Sprite Sheet_53"
+  - first:
+      213: -8777725557757452678
+    second: "Mem\xF3ria - Sprite Sheet_54"
+  - first:
+      213: 1483952032876642440
+    second: "Mem\xF3ria - Sprite Sheet_55"
+  - first:
+      213: 8889239105615219882
+    second: "Mem\xF3ria - Sprite Sheet_56"
+  - first:
+      213: -7539348816217641609
+    second: "Mem\xF3ria - Sprite Sheet_57"
+  - first:
+      213: 6626010990160929393
+    second: "Mem\xF3ria - Sprite Sheet_58"
+  - first:
+      213: -1050394519553949911
+    second: "Mem\xF3ria - Sprite Sheet_59"
+  - first:
+      213: 3876879428299677799
+    second: "Mem\xF3ria - Sprite Sheet_60"
+  - first:
+      213: -319455245210010364
+    second: "Mem\xF3ria - Sprite Sheet_61"
+  - first:
+      213: -804380561189770099
+    second: "Mem\xF3ria - Sprite Sheet_62"
+  - first:
+      213: -3174614589426333410
+    second: "Mem\xF3ria - Sprite Sheet_63"
+  - first:
+      213: -4144833815381454733
+    second: "Mem\xF3ria - Sprite Sheet_64"
+  - first:
+      213: 4422176463915433176
+    second: "Mem\xF3ria - Sprite Sheet_65"
+  - first:
+      213: 8635254538825623618
+    second: "Mem\xF3ria - Sprite Sheet_66"
+  - first:
+      213: -6147024140075189451
+    second: "Mem\xF3ria - Sprite Sheet_67"
+  - first:
+      213: 4231253688589352440
+    second: "Mem\xF3ria - Sprite Sheet_68"
+  - first:
+      213: -7928502833120301117
+    second: "Mem\xF3ria - Sprite Sheet_69"
+  - first:
+      213: -7438952218141080896
+    second: "Mem\xF3ria - Sprite Sheet_70"
+  - first:
+      213: -1441003304769344000
+    second: "Mem\xF3ria - Sprite Sheet_71"
+  - first:
+      213: 1161311294533315030
+    second: "Mem\xF3ria - Sprite Sheet_72"
+  - first:
+      213: 2994722321736155400
+    second: "Mem\xF3ria - Sprite Sheet_73"
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_0"
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 3338
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176ac85469dfd9d44a1e8bd31483ea0f
+      internalID: -3984645271797095226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_1"
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 3357
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d49969715da4b2b4c80d7286a56f2374
+      internalID: -9162503672165372021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_2"
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 3297
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca1efcdcb1d436428ca1e07f7d1c20e
+      internalID: 7337111775679557541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_3"
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 3297
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04514540c17a9a04998caaa2ec26f21b
+      internalID: 2560679849476235504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_4"
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 3297
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d190798e7e250045a3a929627b18a6b
+      internalID: 8437360743094293652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_5"
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 3318
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e9a04396ffc444fa575273501e28b7
+      internalID: -8551147823474644853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_6"
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 3318
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b721f8e6c0a06f48999d207d445fe46
+      internalID: 4446558366185736324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_7"
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 3318
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b1d8ffe0aec3b47a7a9a4b3a07e32e
+      internalID: -6234722404010337794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_8"
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 3258
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e30a5e6146d59f14fb63bf60baf8be2d
+      internalID: -5071631540599185540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_9"
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 3117
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b051f9a3d24fe784aa50eca0778fb7ed
+      internalID: 7553569957274230288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_10"
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 3278
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 471f36f228e53054b88a8d16344db74e
+      internalID: 7194883151032174846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_11"
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 3138
+        width: 165
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f75f5e32efb2be4fac39b175cec8a21
+      internalID: 5083988706035230184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_12"
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 3198
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54f760b2d92c2b42a9b0f2f443c4e38
+      internalID: -7033817638651103478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_13"
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 3218
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 873357dc1f42060498171b96cd8ff9d9
+      internalID: 6909942469377889176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_14"
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 3138
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 377a1abe2f10dd64aa552ba0e6c745f7
+      internalID: 2250805464512866984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_15"
+      rect:
+        serializedVersion: 2
+        x: 1798
+        y: 3158
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4531a63be93324280e0fa75257379b
+      internalID: -1106511202350347650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_16"
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 3098
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7f4326fd578134f91c810f09796f5a
+      internalID: -6074368381228877849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_17"
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 3098
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c58b5c70287c51f44a4d2eeeeca97f87
+      internalID: 7734934427379924470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_18"
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 3117
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10810e6a8035b64e92297e770351014
+      internalID: -1165337320643904928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_19"
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 3098
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b10e378fe6a9f47879a36fdcbc7cba
+      internalID: -4371032035943559526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_20"
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 3078
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 443e544562086664f9f0c4159a2a21be
+      internalID: 1534442236280265586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_21"
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 3078
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b307d5d27730c6c4187a5274f732213e
+      internalID: -1408327532542821315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_22"
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 3057
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db64c18ee7abb124f8a604840e9d7660
+      internalID: -4688937276445923869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_23"
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 3018
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d00bb61575034842854247fbc603689
+      internalID: -6572758797390662863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_24"
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 3038
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d2657d49b5cb442a88142d8eb02362
+      internalID: -2699260859678330869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_25"
+      rect:
+        serializedVersion: 2
+        x: 1878
+        y: 3038
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cff119cf10d63440982ac93f0a4dfb0
+      internalID: 8782473122669364650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_26"
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 3038
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0eef6bed3d2cb344b10aba6f1140316
+      internalID: -5758818170948862144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_27"
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 2097
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c418919f6ac9ea4693140d0751c6f3f
+      internalID: -4545466109477322846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_28"
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 2078
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d5b1b78210f8e469bb0712d2f983c7
+      internalID: 7052755397130151507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_29"
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 2078
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc6154e48894d048a3e6483b9a3b7a2
+      internalID: 4581605259028145445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_30"
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 2058
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fc616c29f75a884081d726caf151c09
+      internalID: 4966201859731799212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_31"
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 2058
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 968eee55635f1b046bb04b487a73360b
+      internalID: 4054744093474537389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_32"
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 2058
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96c959b7c9a8de4b837acc0f2e1d4af
+      internalID: -2297985807667875744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_33"
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 1917
+        width: 184
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b57ef6e28dd9cf04f8b8254d36637005
+      internalID: 4259880078395370125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_34"
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 1878
+        width: 186
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58213558683e1fd46a0d4b3a06e3e09f
+      internalID: -3006396282690074873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_35"
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 1958
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9574913a69d3846a259e935619f005
+      internalID: 4339841473756210568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_36"
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 1977
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e022a04c1acdaf947ac4585a3ada58da
+      internalID: -1326383607918052552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_37"
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 1898
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc79c38774b3a84e900ddc6e76ad39d
+      internalID: 1670190993319689219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_38"
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 1917
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e8e603cf249b045899634c4c71b5c8
+      internalID: -2589678761665451075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_39"
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 1898
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c79242e6c7f844aa7da092c14fe6db
+      internalID: 2566310517131128565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_40"
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1857
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69438fe1eb9d2d4792c1eaaeb560804
+      internalID: -5429399836933708859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_41"
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 1857
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095388dcf43a4594fa25b148701ce8ea
+      internalID: -5033678595869961824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_42"
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 1878
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71f1047a0f51cde48b5fa8e06742d541
+      internalID: 6007447520254577096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_43"
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1838
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c66cf2713050c84bb7f7fd8c83b8650
+      internalID: -2260376996979977519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_44"
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 1838
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390065ce5c639864b80e528bc1c60a9d
+      internalID: 6701167499127095983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_45"
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 1818
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbcbb02a76901845b265a01f4807341
+      internalID: 8834141202992444508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_46"
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 1838
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a3f9d079dd6da41bb90922b7bf4c65
+      internalID: -6048130828639254421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_47"
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1778
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86a1b144a14adad4eb0135cf39c7e548
+      internalID: -4269066270178620172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_48"
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1778
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8e8f95138ff804b9e518c4a8b5552e
+      internalID: 8280768623793203677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_49"
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1797
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f32a1bbc48f104493f7a47a69c4dee
+      internalID: 8554455766378698508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_50"
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 1797
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d78247ea3e6a346a57911ac8634e94
+      internalID: 6068095346455889497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_51"
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 1778
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d5cc2a57919aa4d8505d7462d8ff97
+      internalID: 1502303185484413125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_52"
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 1797
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a30a9bf0d27c9a7419fbf5c74db732c5
+      internalID: -1464141596039753786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_53"
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 818
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555fcfe0c7e685c459df6cec85608db0
+      internalID: -7681411577733816305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_54"
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 818
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c748c897d1a0fb449e0b568a4e5f996
+      internalID: -8777725557757452678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_55"
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 777
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4980f079517bc4ab2d2c167893a827
+      internalID: 1483952032876642440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_56"
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 777
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 041db0e221b994247ba55143ec373f49
+      internalID: 8889239105615219882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_57"
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 597
+        width: 205
+        height: 165
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c0f91fc88d91c468da86f80d5cf16f
+      internalID: -7539348816217641609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_58"
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 717
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f9b2345f79506459d7ef29b33b0d1a
+      internalID: 6626010990160929393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_59"
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 578
+        width: 184
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21211952710ec15499eae69605971445
+      internalID: -1050394519553949911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_60"
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 717
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd170b72e2a265448dd45b1b209b9d1
+      internalID: 3876879428299677799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_61"
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 638
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de4900662e9b864792be3d67f94556f
+      internalID: -319455245210010364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_62"
+      rect:
+        serializedVersion: 2
+        x: 1777
+        y: 657
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48bfb653b2d656042b083a8781b38b50
+      internalID: -804380561189770099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_63"
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 558
+        width: 25
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fac336a37255846bc65f1e1e552f8e
+      internalID: -3174614589426333410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_64"
+      rect:
+        serializedVersion: 2
+        x: 757
+        y: 578
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716f855059d674e41ba7bfc8e797ddd7
+      internalID: -4144833815381454733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_65"
+      rect:
+        serializedVersion: 2
+        x: 1858
+        y: 558
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38647fbdc0b4fa54f8ed9cdef3739efc
+      internalID: 4422176463915433176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_66"
+      rect:
+        serializedVersion: 2
+        x: 1978
+        y: 558
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628e3ef2693871d41bbd5a645209f03b
+      internalID: 8635254538825623618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_67"
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 578
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbe72b7fbfe139248a1be4564ddab840
+      internalID: -6147024140075189451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_68"
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 537
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8d6a1845d91bff478fe3fca03fc9032
+      internalID: 4231253688589352440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_69"
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 518
+        width: 45
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197b76b353c9f5443ba8ac04c28177df
+      internalID: -7928502833120301117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_70"
+      rect:
+        serializedVersion: 2
+        x: 1897
+        y: 518
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2a43ec60b096848af6fdb30f5ff659
+      internalID: -7438952218141080896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_71"
+      rect:
+        serializedVersion: 2
+        x: 1957
+        y: 518
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff5b111a8003064f9f3db8de0ee00f5
+      internalID: -1441003304769344000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_72"
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 477
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc2ec90b176c114e978a278e6697936
+      internalID: 1161311294533315030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Mem\xF3ria - Sprite Sheet_73"
+      rect:
+        serializedVersion: 2
+        x: 1918
+        y: 477
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8eb137dc1143ca4daa25303b1826401
+      internalID: 2994722321736155400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
