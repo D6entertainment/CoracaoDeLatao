@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Botões : MonoBehaviour
 {
-    [Header("Video")] 
+    [Header("Vídeo")] 
     public GameObject VideoPlayer;
     public float timeToStop;
     public float timeToPlay;
