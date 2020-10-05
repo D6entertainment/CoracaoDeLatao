@@ -9,6 +9,7 @@ public class JogadorScript : MonoBehaviour
     [Header("Movimento")]
     public float speed = 10f;
     public float forcaPulo = 800f;
+    public float forcaPuloDuplo = 200f;
     public Transform verificaChao;
     public LayerMask oChao;
     public float raio = 0.2f;
@@ -18,12 +19,26 @@ public class JogadorScript : MonoBehaviour
     public float deslizador = 0f;
     public float Levitacao = 0f;
 
+    [Header("Upgrades")]
+
+    public int puloDuplo = 1;
+    public int podePuloDuplo = 1;
+    public bool UpgradeTiro = false;
+    //public Transform tiro;
+    //public Transform posicaoCanoDaArma;
+    private alsapao alsapao;
+
 
     [Header("Verificador")]
     bool estaPulando = false;
     public bool estaChao = false;
     private Rigidbody2D body;
     SpriteRenderer sprite;
+
+
+    [Header("outros")]
+
+    public Text texto;
 
 
     [Header("Ataque")]
@@ -53,6 +68,8 @@ public class JogadorScript : MonoBehaviour
         animator = GetComponent<Animator>();
         paraJogadorCut = true;
         StartCoroutine(Paradinha());
+      
+   
     }
 
     IEnumerator Paradinha()
@@ -63,19 +80,28 @@ public class JogadorScript : MonoBehaviour
 
     private void Update()
     {
+
         if (!paraJogadorCut)
         {
             if (paraJogadorIma == 0)
             {
-                if (Input.GetButtonDown("Jump") && estaChao)
+                if (Input.GetButtonDown("Jump") && estaChao  )
                 {
                     animator.SetBool("Jump", true);
                     body.AddForce(new Vector2(0f, forcaPulo));
+                 
+
+
                 }
-                else if (body.velocity.y > 0 && !Input.GetButton("Jump"))
+         
+       
+
+                else if (body.velocity.y > 0 && !Input.GetButton("Jump") && podePuloDuplo > 0)
                 {
                     body.velocity += Vector2.up * -0.8f;
+                    podePuloDuplo --;
                 }
+
             }
         }
     }
@@ -167,13 +193,49 @@ public class JogadorScript : MonoBehaviour
         {
             SceneManager.LoadScene("Continua");
         }
+        if(collision.CompareTag("UpgradePerna")) 
+        {
+            forcaPulo += forcaPuloDuplo;
+            Destroy(collision.gameObject);
+        }
+        if (collision.CompareTag("UpgradeTiro"))
+        {
+            UpgradeTiro = true;
+            Destroy(collision.gameObject);
+        }
+        if (collision.CompareTag("Ausapao"))
+        {
+            texto.enabled = true;
+        }
+
     }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ausapao"))
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                //tocar som do alsapao
+                Destroy(collision.gameObject);
+            }
+
+
+
+
+        }
+    }
+
+
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Cutscenes")
         {
             paraJogadorCut = false;
+        }
+        if (collision.CompareTag("Ausapao"))
+        {
+            texto.enabled = false;
         }
     }
 
@@ -219,11 +281,19 @@ public class JogadorScript : MonoBehaviour
 
     void JogadorAtaque()
     {
-        Collider2D[] AtacarInimigo = Physics2D.OverlapCircleAll (verificaAtaque.position, raioAtaque, paraBater);
-        for (int i = 0; i < AtacarInimigo.Length; i++)
-        {
-            AtacarInimigo[i].SendMessage("acertou",1);
-        }
+      //  if (UpgradeTiro == false) 
+       // {
+            Collider2D[] AtacarInimigo = Physics2D.OverlapCircleAll(verificaAtaque.position, raioAtaque, paraBater);
+            for (int i = 0; i < AtacarInimigo.Length; i++)
+            {
+                AtacarInimigo[i].SendMessage("acertou", 1);
+            }
+     //   }
+    //    else 
+       // {
+     //       Instantiate(tiro,posicaoCanoDaArma.position,Quaternion.identity);
+        
+       // }
     }
 
     private void OnDrawGizmosSelected()
