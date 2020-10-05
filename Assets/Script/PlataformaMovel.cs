@@ -8,6 +8,8 @@ public class PlataformaMovel : MonoBehaviour
     public float m_Speed;
     public float m_Accuracy;
     public float m_Delay;
+    public Transform Player;
+    public Transform pai;
     private int m_Index;
     private float m_Time;
     private bool m_Waiting;
@@ -38,6 +40,7 @@ public class PlataformaMovel : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.transform.parent = transform;
+            Player.transform.SetParent(pai);
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -45,6 +48,7 @@ public class PlataformaMovel : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.transform.parent = null;
+            Player.transform.SetParent(null);
         }
     }
 }

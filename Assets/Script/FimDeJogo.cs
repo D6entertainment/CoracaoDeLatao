@@ -21,7 +21,7 @@ public class FimDeJogo : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene("Continua");
+            SceneManager.LoadScene("Cidade");
         }
     }
 }

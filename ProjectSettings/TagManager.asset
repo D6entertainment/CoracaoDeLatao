@@ -11,6 +11,9 @@ TagManager:
   - Soltar
   - Travador
   - Fim
+  - FimPrimeiraCena
+  - teste
+  - alvo
   layers:
   - Default
   - TransparentFX
