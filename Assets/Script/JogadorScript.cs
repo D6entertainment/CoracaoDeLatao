@@ -8,7 +8,7 @@ public class JogadorScript : MonoBehaviour
 {
     [Header("Movimento")]
     public float speed = 10f;
-    public float forcaPulo = 800f;
+    public float forcaPulo = 50f;
     public float forcaPuloDuplo = 200f;
     public Transform verificaChao;
     public LayerMask oChao;
@@ -18,12 +18,18 @@ public class JogadorScript : MonoBehaviour
     public bool imaAtivado = false;
     public float deslizador = 0f;
     public float Levitacao = 0f;
+    public KeyCode KeyAndarDireita = KeyCode.D;
+    public KeyCode KeyAndarEsquerda = KeyCode.A;
+    public KeyCode KeyPular = KeyCode.Space;
+    public KeyCode KeyBater = KeyCode.O;
+    public KeyCode KeyInteragir = KeyCode.E;
 
     [Header("Upgrades")]
 
     public int puloDuplo = 1;
     public int podePuloDuplo = 1;
     public bool UpgradeTiro = false;
+    public AudioSource audioUpgradePerna;
     //public Transform tiro;
     //public Transform posicaoCanoDaArma;
     private alsapao alsapao;
@@ -48,7 +54,8 @@ public class JogadorScript : MonoBehaviour
     public float tempoProximoAtaque;
 
     [Header("Vida")]
-    public int Vida;
+    public int Vida = 10;
+   // public int vidaCheia = 10;
     public GameObject[] lifeObject;
 
     [Header("Animator")]
@@ -81,11 +88,15 @@ public class JogadorScript : MonoBehaviour
     private void Update()
     {
 
+        
+
+
+
         if (!paraJogadorCut)
         {
             if (paraJogadorIma == 0)
             {
-                if (Input.GetButtonDown("Jump") && estaChao  )
+                if (Input.GetKeyDown(KeyPular) && estaChao  )
                 {
                     animator.SetBool("Jump", true);
                     body.AddForce(new Vector2(0f, forcaPulo));
@@ -96,7 +107,7 @@ public class JogadorScript : MonoBehaviour
          
        
 
-                else if (body.velocity.y > 0 && !Input.GetButton("Jump") && podePuloDuplo > 0)
+                else if (body.velocity.y > 0 && !Input.GetKeyDown(KeyPular) && podePuloDuplo > 0)
                 {
                     body.velocity += Vector2.up * -0.8f;
                     podePuloDuplo --;
@@ -128,7 +139,7 @@ public class JogadorScript : MonoBehaviour
             {
                 if (tempoProximoAtaque <= 0)
                 {
-                    if (Input.GetButtonDown("Fire1") && body.velocity == new Vector2(0, 0))
+                    if (Input.GetKey(KeyBater) && body.velocity == new Vector2(0, 0))
                     {
                         tempoProximoAtaque = 0.2f;
                         JogadorAtaque();
@@ -141,7 +152,7 @@ public class JogadorScript : MonoBehaviour
 
                 if (Vida <= 0)
                 {
-                    //SceneManager.LoadScene("GameOver");
+                    SceneManager.LoadScene("GameOver");
                 }
 
                 float move = Input.GetAxis("Horizontal");
@@ -160,7 +171,7 @@ public class JogadorScript : MonoBehaviour
                 animator.SetFloat("Velocidade", Mathf.Abs(axis));
 
 
-                if (Input.GetButton("Fire1"))
+                if (Input.GetKey(KeyBater))
                 {
                     Fire = true;
                     animator.SetBool("Fire", true);
@@ -184,6 +195,12 @@ public class JogadorScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
+        if (collision.CompareTag("MorteInstantanea")) 
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+
         if (collision.gameObject.tag == "Cutscenes")
         {
             paraJogadorCut = true;
@@ -195,6 +212,7 @@ public class JogadorScript : MonoBehaviour
         }
         if(collision.CompareTag("UpgradePerna")) 
         {
+            audioUpgradePerna.Play();
             forcaPulo += forcaPuloDuplo;
             Destroy(collision.gameObject);
         }
@@ -207,6 +225,18 @@ public class JogadorScript : MonoBehaviour
         {
             texto.enabled = true;
         }
+        if (collision.gameObject.tag == "Missil")
+        {
+            DamageTaked(1);
+            animator.SetBool("Hurt", true);
+        }
+        else
+        {
+            animator.SetBool("Hurt", false);
+        }
+
+
+
 
     }
     private void OnTriggerStay2D(Collider2D collision)
@@ -250,6 +280,7 @@ public class JogadorScript : MonoBehaviour
         {
             animator.SetBool("Hurt", false);
         }
+        
 
         if (collision.gameObject.tag == "Mata")
         {
@@ -259,19 +290,25 @@ public class JogadorScript : MonoBehaviour
     }
 
 
-    private void DamageTaked(int damage)
+    public void DamageTaked(int damage)
     {
         Vida -= damage;
-        StartCoroutine(ColorDamageChange());
+         StartCoroutine(ColorDamageChange());
+       // for (int i = Vida-1; i>= (Vida-damage);i--) 
+       // {
+        //    lifeObject[Vida].SetActive(false);
+       //     Vida --;
+          
+        //}
         lifeObject[Vida].SetActive(false);
-        
+
     }
 
     IEnumerator ColorDamageChange(){
         gameObject.GetComponent<SpriteRenderer>().color = Color.red;
-        yield return new WaitForSeconds(0.7f);
-        gameObject.GetComponent<SpriteRenderer>().color = new Color(255f,255f,255f);
-    }
+       yield return new WaitForSeconds(0.7f);
+      gameObject.GetComponent<SpriteRenderer>().color = new Color(255f,255f,255f);
+   }
 
     void Flip()
     {

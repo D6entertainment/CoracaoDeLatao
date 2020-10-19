@@ -205,5 +205,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5079334f5ac400741a2df26833daa560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forca: 1
+  forca: 1.5
   PlayerEmCima: 0

@@ -12,6 +12,7 @@ public class Teleporte : MonoBehaviour
     public GameObject painelPreto;
     public int TempoTelaPreta = 2;
     public bool verificaTeleporte;
+    public AudioSource audio;
 
 
     private void Start()
@@ -71,6 +72,8 @@ public class Teleporte : MonoBehaviour
     {
 
          painelPreto.SetActive(true);
+        // play em audio
+        audio.Play();
          StartCoroutine(cronometro(TempoTelaPreta));
        
         player.transform.position = posicaoFinal.transform.position;

@@ -17,6 +17,12 @@ TagManager:
   - UpgradePerna
   - UpgradeTiro
   - Ausapao
+  - FimDoCaminho
+  - MorteInstantanea
+  - Explosivel
+  - Missil
+  - FimDaVida
+  - FimdaVida
   layers:
   - Default
   - TransparentFX

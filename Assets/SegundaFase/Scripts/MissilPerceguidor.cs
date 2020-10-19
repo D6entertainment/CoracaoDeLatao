@@ -10,6 +10,8 @@ public class MissilPerceguidor : MonoBehaviour
     public GameObject Explosao;
     public float velocidadeRotacao = 3f;
     public float velocidade = 10f;
+    
+    public int dano = 1;
    
 
     Quaternion rotacaoAoAlvo;
@@ -18,7 +20,7 @@ public class MissilPerceguidor : MonoBehaviour
 
     private void Start()
     {
-        alvo = GameObject.FindGameObjectWithTag("alvo");
+        alvo = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
        
     }
@@ -34,10 +36,12 @@ public class MissilPerceguidor : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Instantiate(Explosao, transform.position, Quaternion.identity);
-        //chamar animacao
+        if(collision.CompareTag("Player")) 
+        {
+            Instantiate(Explosao, transform.position, Quaternion.identity);
+           
+            Destroy(this.gameObject);
+        }
 
-
-         Destroy(this.gameObject);
     }
 }

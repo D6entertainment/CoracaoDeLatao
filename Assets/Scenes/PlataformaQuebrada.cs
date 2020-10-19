@@ -7,6 +7,7 @@ public class PlataformaQuebrada : MonoBehaviour
     public float forca = 1f;
     public bool PlayerEmCima;
     private float PosicaoY;
+    
 
     private void Start()
     {
