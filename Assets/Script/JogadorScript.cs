@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
 public class JogadorScript : MonoBehaviour
 {
@@ -23,6 +22,8 @@ public class JogadorScript : MonoBehaviour
     public KeyCode KeyPular = KeyCode.Space;
     public KeyCode KeyBater = KeyCode.O;
     public KeyCode KeyInteragir = KeyCode.E;
+    public bool face = true;
+    private Transform roboTransform;
 
     [Header("Upgrades")]
 
@@ -32,7 +33,7 @@ public class JogadorScript : MonoBehaviour
     public AudioSource audioUpgradePerna;
     //public Transform tiro;
     //public Transform posicaoCanoDaArma;
-    private alsapao alsapao;
+    //private alsapao alsapao;
 
 
     [Header("Verificador")]
@@ -42,9 +43,10 @@ public class JogadorScript : MonoBehaviour
     SpriteRenderer sprite;
 
 
+
     [Header("outros")]
 
-    public Text texto;
+    // public Text texto;
 
 
     [Header("Ataque")]
@@ -55,7 +57,7 @@ public class JogadorScript : MonoBehaviour
 
     [Header("Vida")]
     public int Vida = 10;
-   // public int vidaCheia = 10;
+    // public int vidaCheia = 10;
     public GameObject[] lifeObject;
 
     [Header("Animator")]
@@ -65,7 +67,7 @@ public class JogadorScript : MonoBehaviour
     bool ladoDireito = true;
     bool Fire = true;
     //bool Jump = true;
-    
+
 
 
     void Start()
@@ -75,8 +77,8 @@ public class JogadorScript : MonoBehaviour
         animator = GetComponent<Animator>();
         paraJogadorCut = true;
         StartCoroutine(Paradinha());
-      
-   
+        roboTransform = GetComponent<Transform>();
+        face = true;
     }
 
     IEnumerator Paradinha()
@@ -87,8 +89,40 @@ public class JogadorScript : MonoBehaviour
 
     private void Update()
     {
-
+        if (Input.GetKey(KeyAndarDireita) && !face)
+        {
+            Flip();
+        }
+        else if (Input.GetKey(KeyAndarEsquerda) && face) 
+        {
+            Flip();
         
+        }
+
+
+
+        if (Input.GetKey(KeyAndarDireita))
+        {
+            transform.Translate(new Vector2(speed, 0));
+            animator.SetBool("Velocidade2", true);
+
+        }
+        else if (Input.GetKey(KeyAndarEsquerda))
+        {
+            transform.Translate(new Vector2(-speed, 0));
+
+            animator.SetBool("Velocidade2", true);
+
+        } else if (!Input.GetKey(KeyAndarDireita) && !Input.GetKey(KeyAndarEsquerda)) 
+        {
+            animator.SetBool("Velocidade2", false);
+        }
+
+
+      //  if ((speed > 0 && sprite.flipX == true) || (speed < 0 && sprite.flipX == false))
+      //  {
+         //   Flip();
+       // }
 
 
 
@@ -96,21 +130,21 @@ public class JogadorScript : MonoBehaviour
         {
             if (paraJogadorIma == 0)
             {
-                if (Input.GetKeyDown(KeyPular) && estaChao  )
+                if (Input.GetKeyDown(KeyPular) && estaChao)
                 {
                     animator.SetBool("Jump", true);
                     body.AddForce(new Vector2(0f, forcaPulo));
-                 
+
 
 
                 }
-         
-       
+
+
 
                 else if (body.velocity.y > 0 && !Input.GetKeyDown(KeyPular) && podePuloDuplo > 0)
                 {
                     body.velocity += Vector2.up * -0.8f;
-                    podePuloDuplo --;
+                    podePuloDuplo--;
                 }
 
             }
@@ -155,23 +189,23 @@ public class JogadorScript : MonoBehaviour
                     SceneManager.LoadScene("GameOver");
                 }
 
-                float move = Input.GetAxis("Horizontal");
+                // float move = Input.GetAxis("Horizontal");
 
-                Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal") + deslizador, 0.0f + Levitacao, 0.0f);
-                transform.position = transform.position + horizontal * speed;
+                // Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal") + deslizador, 0.0f + Levitacao, 0.0f);
+                // transform.position = transform.position + horizontal * speed;
 
-                if ((move > 0 && sprite.flipX == true) || (move < 0 && sprite.flipX == false))
-                {
-                    Flip();
-                }
+                // if ((speed > 0 && sprite.flipX == true) || (speed < 0 && sprite.flipX == false))
+                //  {
+                //      Flip();
+                // }
 
-                axis = Input.GetAxis("Horizontal");
+                // axis = Input.GetAxis("Horizontal");
 
-                velocidade = new Vector2(axis * speed, GetComponent<Rigidbody2D>().velocity.y);
-                animator.SetFloat("Velocidade", Mathf.Abs(axis));
+                // velocidade = new Vector2(axis * speed, GetComponent<Rigidbody2D>().velocity.y);
+                // animator.SetFloat("Velocidade", Mathf.Abs(axis));
 
 
-                if (Input.GetKey(KeyBater))
+                if (Input.GetKeyDown(KeyBater))
                 {
                     Fire = true;
                     animator.SetBool("Fire", true);
@@ -183,20 +217,20 @@ public class JogadorScript : MonoBehaviour
                     animator.SetBool("Fire", false);
                 }
 
-                
+
 
                 if (!estaChao)
                     animator.SetBool("Jump", false);
             }
         }
 
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.CompareTag("MorteInstantanea")) 
+        if (collision.CompareTag("MorteInstantanea"))
         {
             SceneManager.LoadScene("GameOver");
         }
@@ -210,7 +244,7 @@ public class JogadorScript : MonoBehaviour
         {
             SceneManager.LoadScene("Continua");
         }
-        if(collision.CompareTag("UpgradePerna")) 
+        if (collision.CompareTag("UpgradePerna"))
         {
             audioUpgradePerna.Play();
             forcaPulo += forcaPuloDuplo;
@@ -223,7 +257,7 @@ public class JogadorScript : MonoBehaviour
         }
         if (collision.CompareTag("Ausapao"))
         {
-            texto.enabled = true;
+            //      texto.enabled = true;
         }
         if (collision.gameObject.tag == "Missil")
         {
@@ -265,7 +299,7 @@ public class JogadorScript : MonoBehaviour
         }
         if (collision.CompareTag("Ausapao"))
         {
-            texto.enabled = false;
+            //     texto.enabled = false;
         }
     }
 
@@ -280,7 +314,7 @@ public class JogadorScript : MonoBehaviour
         {
             animator.SetBool("Hurt", false);
         }
-        
+
 
         if (collision.gameObject.tag == "Mata")
         {
@@ -293,44 +327,50 @@ public class JogadorScript : MonoBehaviour
     public void DamageTaked(int damage)
     {
         Vida -= damage;
-         StartCoroutine(ColorDamageChange());
-       // for (int i = Vida-1; i>= (Vida-damage);i--) 
-       // {
+        StartCoroutine(ColorDamageChange());
+        // for (int i = Vida-1; i>= (Vida-damage);i--) 
+        // {
         //    lifeObject[Vida].SetActive(false);
-       //     Vida --;
-          
+        //     Vida --;
+
         //}
         lifeObject[Vida].SetActive(false);
 
     }
 
-    IEnumerator ColorDamageChange(){
+    IEnumerator ColorDamageChange()
+    {
         gameObject.GetComponent<SpriteRenderer>().color = Color.red;
-       yield return new WaitForSeconds(0.7f);
-      gameObject.GetComponent<SpriteRenderer>().color = new Color(255f,255f,255f);
-   }
+        yield return new WaitForSeconds(0.7f);
+        gameObject.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f);
+    }
 
     void Flip()
     {
-        sprite.flipX = !sprite.flipX;
-        verificaAtaque.localPosition = new Vector2(-verificaAtaque.localPosition.x, verificaAtaque.localPosition.y);
+        face = !face;
+
+        Vector3 scala = roboTransform.localScale;
+        scala.x *= -1;
+        roboTransform.localScale = scala;
+       // sprite.flipX = !sprite.flipX;
+      //  verificaAtaque.localPosition = new Vector2(-verificaAtaque.localPosition.x, verificaAtaque.localPosition.y);
     }
 
     void JogadorAtaque()
     {
-      //  if (UpgradeTiro == false) 
-       // {
-            Collider2D[] AtacarInimigo = Physics2D.OverlapCircleAll(verificaAtaque.position, raioAtaque, paraBater);
-            for (int i = 0; i < AtacarInimigo.Length; i++)
-            {
-                AtacarInimigo[i].SendMessage("acertou", 1);
-            }
-     //   }
-    //    else 
-       // {
-     //       Instantiate(tiro,posicaoCanoDaArma.position,Quaternion.identity);
-        
-       // }
+        //  if (UpgradeTiro == false) 
+        // {
+        Collider2D[] AtacarInimigo = Physics2D.OverlapCircleAll(verificaAtaque.position, raioAtaque, paraBater);
+        for (int i = 0; i < AtacarInimigo.Length; i++)
+        {
+            AtacarInimigo[i].SendMessage("acertou", 1);
+        }
+        //   }
+        //    else 
+        // {
+        //       Instantiate(tiro,posicaoCanoDaArma.position,Quaternion.identity);
+
+        // }
     }
 
     private void OnDrawGizmosSelected()
@@ -339,7 +379,4 @@ public class JogadorScript : MonoBehaviour
         Gizmos.DrawWireSphere(verificaChao.position, raio);
         Gizmos.DrawWireSphere(verificaAtaque.position, raioAtaque);
     }
-
-   
 }
-    

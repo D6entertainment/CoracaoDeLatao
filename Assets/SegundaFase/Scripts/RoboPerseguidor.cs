@@ -14,7 +14,8 @@ public class RoboPerseguidor : MonoBehaviour
     public float tempoDeAtirar = 0f; 
     public bool PodeLançarMissil ;
     public int tiros = 3;
-    
+  
+
 
 
 
@@ -29,21 +30,24 @@ public class RoboPerseguidor : MonoBehaviour
 
     void Update()
     {
-        if (EstaPertoPlayer && fimDoCaminho == false) 
+
+   
+
+        if (EstaPertoPlayer && fimDoCaminho == false ) 
         {
             transform.Translate(new Vector2(velocidade, 0) * Time.deltaTime);
             animator.SetBool("Andando",true);
             podeAtirar = false;
 
         }
-        else if(EstaPertoPlayer && fimDoCaminho) 
+        else if(EstaPertoPlayer && fimDoCaminho ) 
         {
             transform.Translate(new Vector2(0, 0) * Time.deltaTime);
  
                 animator.SetBool("Parado", true);
                 podeAtirar = true;
             tempoDeAtirar += Time.deltaTime;
-            Debug.Log(tempoDeAtirar);
+           
             if(tempoDeAtirar >= 2f) 
             {
                 tempoDeAtirar = 0f;

@@ -13,11 +13,13 @@ public class Teleporte : MonoBehaviour
     public int TempoTelaPreta = 2;
     public bool verificaTeleporte;
     public AudioSource audio;
+ 
 
 
     private void Start()
     {
         mensagemNaTela.enabled = false;
+       
 
     }
 
@@ -52,9 +54,11 @@ public class Teleporte : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E))
         {
+            
             teleporte();
 
         }
+    
 
 
     }
@@ -65,13 +69,14 @@ public class Teleporte : MonoBehaviour
             teleporte();
 
         }
+ 
 
     }
 
     public void teleporte() 
     {
-
-         painelPreto.SetActive(true);
+       
+        painelPreto.SetActive(true);
         // play em audio
         audio.Play();
          StartCoroutine(cronometro(TempoTelaPreta));
