@@ -6,6 +6,7 @@ public class levitacaoAgua : MonoBehaviour
 {
     public float Velocidade = 2f;
     public bool podeSubir;
+    public bool colisor;
 
     private void Start()
     {
@@ -15,24 +16,29 @@ public class levitacaoAgua : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.CompareTag("Player")) 
+        if (collision.CompareTag("Player"))
         {
             podeSubir = true;
         }
+        //  if (collision.CompareTag("Limite"))
+        //  {
+        //    colisor = true;
+        // }
+
 
 
     }
     private void Update()
     {
-        if(podeSubir == false) 
+        if (podeSubir && colisor == false)
         {
-            transform.Translate(new Vector2(0,0));
-        
+            transform.Translate(new Vector2(0, Velocidade) * Time.deltaTime);
+
         }
-        else 
+        else if (podeSubir && colisor)
         {
 
-            transform.Translate(new Vector2(0, Velocidade) * Time.deltaTime) ;
+            transform.Translate(new Vector2(0, 0));
 
         }
     }

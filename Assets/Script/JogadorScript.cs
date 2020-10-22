@@ -24,6 +24,7 @@ public class JogadorScript : MonoBehaviour
     public KeyCode KeyInteragir = KeyCode.E;
     public bool face = true;
     private Transform roboTransform;
+    public bool ficaParado;
 
     [Header("Upgrades")]
 
@@ -79,6 +80,7 @@ public class JogadorScript : MonoBehaviour
         StartCoroutine(Paradinha());
         roboTransform = GetComponent<Transform>();
         face = true;
+        ficaParado = false;
     }
 
     IEnumerator Paradinha()
@@ -89,6 +91,11 @@ public class JogadorScript : MonoBehaviour
 
     private void Update()
     {
+        if (ficaParado) 
+        {
+            transform.Translate(new Vector2(0,0));
+        }
+
         if (Input.GetKey(KeyAndarDireita) && !face)
         {
             Flip();
@@ -101,7 +108,7 @@ public class JogadorScript : MonoBehaviour
 
 
 
-        if (Input.GetKey(KeyAndarDireita))
+        if (Input.GetKey(KeyAndarDireita) && ficaParado == false)
         {
             transform.Translate(new Vector2(speed, 0));
             animator.SetBool("Velocidade2", true);

@@ -13,8 +13,7 @@ public class inimigoEsperto : MonoBehaviour
     private Animator animator;
     public float distanciaDeDeteccao = 10f;
     public bool face = true;
-    private float posicaoXPlayer;
-    private bool limite;
+    public bool limite;
 
     private void Start()
     {
@@ -22,11 +21,17 @@ public class inimigoEsperto : MonoBehaviour
         face = true;
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        posicaoXPlayer = PlayerTransform.transform.position.x;
+       
     }
 
     private void Update()
     {
+        if (limite) 
+        {
+            Flip();
+            transform.Translate(new Vector2 (0,0));
+            Debug.Log("limite entrou");
+        }
         if (PlayerTransform.transform.position.x > transform.position.x && !face)
         {
             Flip();
@@ -36,7 +41,7 @@ public class inimigoEsperto : MonoBehaviour
         }
 
 
-        if(vidaInimigo <= 0) 
+        if(vidaInimigo <= 0 ) 
         {
             Destroy(gameObject);
         }
@@ -70,6 +75,18 @@ public class inimigoEsperto : MonoBehaviour
         {
             limite = true;
         }
+        if (collision.CompareTag("MorteInstantanea"))
+        {
+            Destroy(gameObject);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Limite"))
+        {
+            limite = false;
+        }
+
     }
 
 

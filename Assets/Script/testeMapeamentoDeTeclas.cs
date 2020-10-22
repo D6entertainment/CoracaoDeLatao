@@ -20,13 +20,20 @@ public class testeMapeamentoDeTeclas : MonoBehaviour
         {
             foreach (KeyCode kcode in System.Enum.GetValues(typeof(KeyCode)))
             {
-                if (Input.GetKey(kcode))
+                ScriptAndar.ficaParado = true;
+                if (Input.GetKeyDown(kcode))
                 {
                     texto.text = (kcode).ToString();
                     ScriptAndar.KeyAndarDireita = kcode;
                     AndarDireita = false;
                 }
             }
+
+        }
+        else 
+        {
+
+            ScriptAndar.ficaParado = false;
         }
         if (AndarEsquerda == true)
         {

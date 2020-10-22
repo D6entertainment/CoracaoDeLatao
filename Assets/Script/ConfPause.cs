@@ -11,6 +11,7 @@ public class ConfPause : MonoBehaviour
         m_confPanel.SetActive(true);
         m_IsPaused = true;
         Time.timeScale = 0.0f;//todo tempo vai ter multiplicado por zero e vai parar 
+        
     }
     public void hidePanel()
     {
@@ -19,6 +20,10 @@ public class ConfPause : MonoBehaviour
         Time.timeScale = 1.0f;
     }
 
-   
+    private void Update()
+    {
+
+    }
+
 }
 
