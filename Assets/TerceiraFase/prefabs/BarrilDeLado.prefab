@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3936680452540026572}
   - component: {fileID: 3112512939756430996}
   - component: {fileID: 1491932274017545998}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BarrilDeLado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,5 +176,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5079334f5ac400741a2df26833daa560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  forca: 0.5
+  forca: 1
   PlayerEmCima: 0
