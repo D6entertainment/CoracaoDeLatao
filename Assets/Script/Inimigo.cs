@@ -38,8 +38,8 @@ public class Inimigo : MonoBehaviour
 
     private void Mover()
     {
-        Vector3 horizontal = new Vector3(1.0f, 0.0f, 0.0f);
-        transform.position = transform.position + horizontal * Velocidade;
+ 
+        transform.Translate(new Vector2(Velocidade,0)* Time.deltaTime);
     }
 
     void Flip()

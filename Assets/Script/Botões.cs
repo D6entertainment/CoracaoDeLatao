@@ -69,4 +69,10 @@ public class Botões : MonoBehaviour
     {
         SceneManager.LoadScene("configuracao");
     }
+
+    public void fase1()
+    {
+        SceneManager.LoadScene("Ferro Velho");
+    }
+
 }

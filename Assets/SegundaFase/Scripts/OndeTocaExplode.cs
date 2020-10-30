@@ -22,6 +22,12 @@ public class OndeTocaExplode : MonoBehaviour
             Destroy(collision.gameObject);
             Debug.Log("destuido");
         }
+        if (collision.CompareTag("daDano"))
+        {
+            Instantiate(explosao, collision.transform.position, Quaternion.identity);
+            Destroy(collision.gameObject);
+            Debug.Log("destuido");
+        }
         if (collision.CompareTag("FimDoCaminho"))
         {
             Debug.Log("fim do caminho");

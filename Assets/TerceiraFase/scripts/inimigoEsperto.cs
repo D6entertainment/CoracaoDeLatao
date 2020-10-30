@@ -62,7 +62,7 @@ public class inimigoEsperto : MonoBehaviour
         }
         else 
         {
-            transform.Translate(new Vector2(0, 0));
+            transform.Translate(new Vector2(0, 0) * Time.deltaTime);
             animator.SetBool("Andando", false);
 
         }

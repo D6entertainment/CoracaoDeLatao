@@ -23948,7 +23948,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758594074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 168.67, y: 15.08, z: 0}
+  m_LocalPosition: {x: 168.67, y: 14.5, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
   - {fileID: 821624910}
@@ -58290,6 +58290,8 @@ MonoBehaviour:
   UpgradeTiro: 0
   audioUpgradePerna: {fileID: 1839366578}
   estaChao: 0
+  DanoMissil: 2
+  DanoInimigo: 1
   verificaAtaque: {fileID: 1018988145}
   raioAtaque: 1.5
   paraBater:

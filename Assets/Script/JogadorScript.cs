@@ -48,6 +48,8 @@ public class JogadorScript : MonoBehaviour
     [Header("outros")]
 
     // public Text texto;
+    public int DanoMissil = 2;
+    public int DanoInimigo = 1;
 
 
     [Header("Ataque")]
@@ -93,7 +95,7 @@ public class JogadorScript : MonoBehaviour
     {
         if (ficaParado) 
         {
-            transform.Translate(new Vector2(0,0));
+            transform.Translate(new Vector2(0,0) * Time.deltaTime);
         }
 
         if (Input.GetKey(KeyAndarDireita) && !face)
@@ -110,13 +112,13 @@ public class JogadorScript : MonoBehaviour
 
         if (Input.GetKey(KeyAndarDireita) && ficaParado == false)
         {
-            transform.Translate(new Vector2(speed, 0));
+            transform.Translate(new Vector2(speed, 0) * Time.deltaTime) ;
             animator.SetBool("Velocidade2", true);
 
         }
         else if (Input.GetKey(KeyAndarEsquerda))
         {
-            transform.Translate(new Vector2(-speed, 0));
+            transform.Translate(new Vector2(-speed, 0) * Time.deltaTime);
 
             animator.SetBool("Velocidade2", true);
 
@@ -268,7 +270,7 @@ public class JogadorScript : MonoBehaviour
         }
         if (collision.gameObject.tag == "Missil")
         {
-            DamageTaked(1);
+            DamageTaked(DanoMissil);
             animator.SetBool("Hurt", true);
         }
         else
@@ -314,7 +316,7 @@ public class JogadorScript : MonoBehaviour
     {
         if (collision.gameObject.tag == "daDano")
         {
-            DamageTaked(1);
+            DamageTaked(DanoInimigo);
             animator.SetBool("Hurt", true);
         }
         else
@@ -333,15 +335,26 @@ public class JogadorScript : MonoBehaviour
 
     public void DamageTaked(int damage)
     {
-        Vida -= damage;
-        StartCoroutine(ColorDamageChange());
-        // for (int i = Vida-1; i>= (Vida-damage);i--) 
-        // {
-        //    lifeObject[Vida].SetActive(false);
-        //     Vida --;
 
-        //}
-        lifeObject[Vida].SetActive(false);
+        for (int i = 0; i<= damage; i++) 
+        {
+
+        Vida = Vida - 1;
+            if (Vida >= 0)
+            {
+                lifeObject[Vida].SetActive(false);
+                StartCoroutine(ColorDamageChange());
+
+            }
+            else 
+            {
+                SceneManager.LoadScene("GameOver");
+            }
+        
+        }
+
+
+ 
 
     }
 
