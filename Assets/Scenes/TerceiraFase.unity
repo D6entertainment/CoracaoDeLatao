@@ -58265,7 +58265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e87ea3132693f548892b76b1b7fc617, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.15
+  speed: 7
   forcaPulo: 2400
   forcaPuloDuplo: 400
   verificaChao: {fileID: 1079954496}

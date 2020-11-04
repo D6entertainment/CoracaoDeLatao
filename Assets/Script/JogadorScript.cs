@@ -126,12 +126,22 @@ public class JogadorScript : MonoBehaviour
         {
             animator.SetBool("Velocidade2", false);
         }
+        if (Input.GetKeyDown(KeyBater))
+        {
+            Fire = true;
+            animator.SetBool("Fire", true);
 
+        }
+        else
+        {
+            Fire = false;
+            animator.SetBool("Fire", false);
+        }
 
-      //  if ((speed > 0 && sprite.flipX == true) || (speed < 0 && sprite.flipX == false))
-      //  {
-         //   Flip();
-       // }
+        //  if ((speed > 0 && sprite.flipX == true) || (speed < 0 && sprite.flipX == false))
+        //  {
+        //   Flip();
+        // }
 
 
 
@@ -214,17 +224,7 @@ public class JogadorScript : MonoBehaviour
                 // animator.SetFloat("Velocidade", Mathf.Abs(axis));
 
 
-                if (Input.GetKeyDown(KeyBater))
-                {
-                    Fire = true;
-                    animator.SetBool("Fire", true);
 
-                }
-                else
-                {
-                    Fire = false;
-                    animator.SetBool("Fire", false);
-                }
 
 
 
