@@ -894,7 +894,7 @@ PrefabInstance:
     - target: {fileID: 5556267390542121841, guid: 74637d72c63d0774f8292983e33bc281,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.4497905
+      value: -6.0507417
       objectReference: {fileID: 0}
     - target: {fileID: 5556267390542121841, guid: 74637d72c63d0774f8292983e33bc281,
         type: 3}
@@ -1084,6 +1084,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 82987453}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &49422559
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (35)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 280.80002
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -68
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1 &51506112
 GameObject:
   m_ObjectHideFlags: 0
@@ -3028,6 +3097,75 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.5878067, y: 7.19075}
   m_EdgeRadius: 0
+--- !u!1001 &131699555
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (15)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 273.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -61
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &133667331
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3256,6 +3394,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 997740538}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &145865245
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (9)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 252.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -79.00272
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!4 &149743721 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4185242640295580194, guid: 1930d747932303a4ea5c4052d124d464,
@@ -3558,6 +3765,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb09e60e26d6244ca3ef8ba44b59ba5, type: 3}
+--- !u!1001 &160079949
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (25)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 281
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -28.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &162059718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5037,51 +5313,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 94, y: -40, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 96, y: -40, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 98, y: -40, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 102, y: -40, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 106, y: -40, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 108, y: -40, z: 0}
     second:
       m_TileIndex: 18
@@ -5113,42 +5344,6 @@ Tilemap:
     second:
       m_TileIndex: 19
       m_TileSpriteIndex: 16
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 113, y: -40, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 117, y: -40, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 121, y: -40, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 126, y: -40, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -5210,35 +5405,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 134, y: -40, z: 0}
     second:
-      m_TileIndex: 20
-      m_TileSpriteIndex: 18
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 136, y: -40, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 140, y: -40, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 143, y: -40, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
+      m_TileIndex: 16
+      m_TileSpriteIndex: 19
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -5885,26 +6053,8 @@ Tilemap:
       m_ColliderType: 1
   - first: {x: 134, y: -35, z: 0}
     second:
-      m_TileIndex: 20
-      m_TileSpriteIndex: 18
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 138, y: -35, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 142, y: -35, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
+      m_TileIndex: 16
+      m_TileSpriteIndex: 19
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -7404,33 +7554,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 136, y: -31, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 140, y: -31, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 143, y: -31, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 144, y: -31, z: 0}
     second:
       m_TileIndex: 18
@@ -7926,24 +8049,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 138, y: -27, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 142, y: -27, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 144, y: -27, z: 0}
     second:
       m_TileIndex: 17
@@ -8245,24 +8350,6 @@ Tilemap:
     second:
       m_TileIndex: 19
       m_TileSpriteIndex: 16
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 136, y: -23, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 140, y: -23, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -8574,24 +8661,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 135, y: -19, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 138, y: -19, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 144, y: -19, z: 0}
     second:
       m_TileIndex: 17
@@ -8893,33 +8962,6 @@ Tilemap:
     second:
       m_TileIndex: 19
       m_TileSpriteIndex: 16
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 136, y: -15, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 140, y: -15, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 143, y: -15, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -9231,24 +9273,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 138, y: -11, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 142, y: -11, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 144, y: -11, z: 0}
     second:
       m_TileIndex: 18
@@ -9550,33 +9574,6 @@ Tilemap:
     second:
       m_TileIndex: 19
       m_TileSpriteIndex: 16
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 136, y: -7, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 140, y: -7, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 143, y: -7, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_ObjectToInstantiate: {fileID: 0}
@@ -12903,33 +12900,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 135, y: -3, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 138, y: -3, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 142, y: -3, z: 0}
-    second:
-      m_TileIndex: 15
-      m_TileSpriteIndex: 13
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 145, y: -3, z: 0}
     second:
       m_TileIndex: 21
@@ -15167,17 +15137,17 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 0
     m_Data: {fileID: 0}
-  - m_RefCount: 34
-    m_Data: {fileID: 11400000, guid: ab1d9201a05020844ba273dcbdb07983, type: 2}
   - m_RefCount: 0
     m_Data: {fileID: 0}
+  - m_RefCount: 2
+    m_Data: {fileID: 11400000, guid: ab1d9201a05020844ba273dcbdb07983, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 0c1b2212d92d6eb49ad081e9682cf779, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: 742be7343cc56ec4bb3b4c59f33de032, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: a16e6841919f907409342cf075e96006, type: 2}
-  - m_RefCount: 6
+  - m_RefCount: 4
     m_Data: {fileID: 11400000, guid: a9d722cb66ab23f45ad492c1d4ce03f6, type: 2}
   - m_RefCount: 10
     m_Data: {fileID: 11400000, guid: 4b6b04807efda0443b1ee4ea35467156, type: 2}
@@ -15218,8 +15188,8 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 186
     m_Data: {fileID: 21300000, guid: cee590b6e0322364b87e7eef9386aa75, type: 3}
-  - m_RefCount: 34
-    m_Data: {fileID: 21300000, guid: b764678956a43144da6db9f9ca124d8c, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 6
     m_Data: {fileID: 21300000, guid: 8cd3f448058d8ac41b12e89c19d98140, type: 3}
   - m_RefCount: 6
@@ -15228,10 +15198,10 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: dc9fa7139ea47f449bc9c8cd7550b589, type: 3}
   - m_RefCount: 63
     m_Data: {fileID: 21300000, guid: 4a36946f0896ae54f9dd52bc778aa46b, type: 3}
-  - m_RefCount: 6
+  - m_RefCount: 4
     m_Data: {fileID: 21300000, guid: 994552f48bacf9945b6d1b452f5b477a, type: 3}
-  - m_RefCount: 0
-    m_Data: {fileID: 0}
+  - m_RefCount: 2
+    m_Data: {fileID: 21300000, guid: b764678956a43144da6db9f9ca124d8c, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: d8102c81a4cdc004ebdb8cd69063c7eb, type: 3}
   - m_RefCount: 1
@@ -15247,7 +15217,7 @@ Tilemap:
   - m_RefCount: 10
     m_Data: {fileID: 21300000, guid: 46f4cc51ea7c67b4abd1fb054efc712a, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 1175
+  - m_RefCount: 1141
     m_Data:
       e00: 1
       e01: 0
@@ -15266,7 +15236,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1175
+  - m_RefCount: 1141
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -16676,7 +16646,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -0.0000021606684, y: -144.00003}
+  m_AnchoredPosition: {x: -0.0000021606684, y: -144.00002}
   m_SizeDelta: {x: 176.2, y: -311.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &328615519
@@ -17090,6 +17060,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1256607200}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &349997819
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (28)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 277.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -21
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1 &350736534
 GameObject:
   m_ObjectHideFlags: 0
@@ -18005,7 +18044,7 @@ Transform:
   - {fileID: 1936897334}
   - {fileID: 1839366577}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &404514033
 PrefabInstance:
@@ -18392,6 +18431,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417702374}
   m_CullTransparentMesh: 0
+--- !u!1001 &421049066
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (30)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 281.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.900001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 49
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!4 &422101032 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4185242640295580194, guid: 1930d747932303a4ea5c4052d124d464,
@@ -19692,6 +19800,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1930d747932303a4ea5c4052d124d464, type: 3}
+--- !u!1001 &503056792
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (17)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 286.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -61
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1 &503122691
 GameObject:
   m_ObjectHideFlags: 0
@@ -19823,7 +20000,7 @@ Transform:
   - {fileID: 1449194683}
   - {fileID: 623488002}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &513993058
 GameObject:
@@ -20773,7 +20950,7 @@ Transform:
   - {fileID: 630334899}
   - {fileID: 1870240048}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &560085390 stripped
 Transform:
@@ -21531,7 +21708,7 @@ PrefabInstance:
     - target: {fileID: 5556267390542121841, guid: 74637d72c63d0774f8292983e33bc281,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -82.45068
+      value: -82.850746
       objectReference: {fileID: 0}
     - target: {fileID: 5556267390542121841, guid: 74637d72c63d0774f8292983e33bc281,
         type: 3}
@@ -21755,7 +21932,7 @@ Transform:
   - {fileID: 1469836131}
   - {fileID: 105854978}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &584748339 stripped
 Transform:
@@ -22956,6 +23133,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 63265703}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &656860846
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (16)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 277.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -61
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!4 &657545059 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4698849972888694126, guid: 5eb09e60e26d6244ca3ef8ba44b59ba5,
@@ -23043,6 +23289,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb09e60e26d6244ca3ef8ba44b59ba5, type: 3}
+--- !u!1001 &663591243
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (24)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 273
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -28.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 43
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &663847197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23277,6 +23592,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 277962713}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &676768843
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (27)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 285
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -21
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 46
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!4 &677382510 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4698849972888694126, guid: 5eb09e60e26d6244ca3ef8ba44b59ba5,
@@ -23652,6 +24036,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 327b2f94af8bfae45aa18e7428977840, type: 3}
+--- !u!1001 &700149000
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (2)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 193.40001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -79.00272
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &700637928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23726,6 +24179,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1930d747932303a4ea5c4052d124d464, type: 3}
+--- !u!1001 &702847129
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (29)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 273
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.900001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 48
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!4 &709416543 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4698849972888694126, guid: 5eb09e60e26d6244ca3ef8ba44b59ba5,
@@ -24595,7 +25117,7 @@ Transform:
   - {fileID: 1589460425}
   - {fileID: 1686262473}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &744747023 stripped
 Transform:
@@ -26777,7 +27299,7 @@ Transform:
   m_Children:
   - {fileID: 821624910}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &759423288 stripped
 Transform:
@@ -28956,6 +29478,75 @@ Transform:
   m_Father: {fileID: 1303949147}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &865573286
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (19)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 277.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -53.100002
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!4 &866767354 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4698849972888694126, guid: 5eb09e60e26d6244ca3ef8ba44b59ba5,
@@ -31496,6 +32087,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1930d747932303a4ea5c4052d124d464, type: 3}
+--- !u!1001 &996718530
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (3)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 198.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -79.00272
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &997740538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32145,6 +32805,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb09e60e26d6244ca3ef8ba44b59ba5, type: 3}
+--- !u!1001 &1020902694
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (22)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 277
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -37
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 41
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!4 &1021938478 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5556267390542121841, guid: 74637d72c63d0774f8292983e33bc281,
@@ -33378,6 +34107,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1073381907}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1078417646
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (14)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 276.80002
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -72.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!4 &1078944564 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4185242640295580194, guid: 1930d747932303a4ea5c4052d124d464,
@@ -34228,7 +35026,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1115409137
 PrefabInstance:
@@ -34517,6 +35315,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1930d747932303a4ea5c4052d124d464, type: 3}
+--- !u!1001 &1121947542
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (21)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 280.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &1122650055
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36682,12 +37549,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1231332901}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.25, y: 1.7, z: -10}
+  m_LocalPosition: {x: 260.80002, y: -76, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 981679549}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1233311868
 PrefabInstance:
@@ -37143,6 +38010,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb09e60e26d6244ca3ef8ba44b59ba5, type: 3}
+--- !u!1001 &1258111139
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (34)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 270.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &1259851457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37944,6 +38880,75 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.1163635, y: 7.19075}
   m_EdgeRadius: 0
+--- !u!1001 &1305621455
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (7)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 234.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -79.00272
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!4 &1305997396 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4698849972888694126, guid: 5eb09e60e26d6244ca3ef8ba44b59ba5,
@@ -38585,6 +39590,75 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336433606}
   m_CullTransparentMesh: 0
+--- !u!1001 &1339763443
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (18)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 285.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -53.100002
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &1344832503
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38728,6 +39802,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1930d747932303a4ea5c4052d124d464, type: 3}
+--- !u!1001 &1356348837
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (33)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 277.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &1359125394
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39055,7 +40198,7 @@ PrefabInstance:
     - target: {fileID: 5556267390542121841, guid: 74637d72c63d0774f8292983e33bc281,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -82.45068
+      value: -82.850746
       objectReference: {fileID: 0}
     - target: {fileID: 5556267390542121841, guid: 74637d72c63d0774f8292983e33bc281,
         type: 3}
@@ -39888,7 +41031,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1396137961
 PrefabInstance:
@@ -41144,6 +42287,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 829094558}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1445777583
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (13)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 285
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -72.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &1447268519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41929,7 +43141,7 @@ Transform:
   - {fileID: 2080883318}
   - {fileID: 1925777352}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1478000373
 PrefabInstance:
@@ -42119,7 +43331,7 @@ Transform:
   - {fileID: 169867070}
   - {fileID: 1203996647}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1484993614 stripped
 Transform:
@@ -42345,7 +43557,7 @@ PrefabInstance:
     - target: {fileID: 5556267390542121841, guid: 74637d72c63d0774f8292983e33bc281,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.7455273
+      value: -6.0507417
       objectReference: {fileID: 0}
     - target: {fileID: 5556267390542121841, guid: 74637d72c63d0774f8292983e33bc281,
         type: 3}
@@ -54294,6 +55506,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 162059718}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1524247505
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (12)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 287
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -79.00272
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!4 &1526695276 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4698849972888694126, guid: 5eb09e60e26d6244ca3ef8ba44b59ba5,
@@ -54846,7 +56127,7 @@ Transform:
   - {fileID: 169558376}
   - {fileID: 384554249}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1548442720
 BoxCollider2D:
@@ -54886,7 +56167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1de68b3a7bd5b864d8efbb79200a751a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Velocidade: 2
+  Velocidade: 1
   podeSubir: 0
   colisor: 0
 --- !u!50 &1548442722
@@ -55851,7 +57132,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1589460424
 GameObject:
@@ -62557,6 +63838,75 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1594121247
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (11)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 281
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -79.00272
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1 &1594225754
 GameObject:
   m_ObjectHideFlags: 0
@@ -62593,6 +63943,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1378934010}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1597623405
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (5)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 212.90001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -79.00272
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!4 &1600049612 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4185242640295580194, guid: 1930d747932303a4ea5c4052d124d464,
@@ -62991,12 +64410,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626822537}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.25, y: 1.7, z: -10}
+  m_LocalPosition: {x: 260.80002, y: -76, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 114079460}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1629443578
 PrefabInstance:
@@ -65498,7 +66917,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1714025080
 MonoBehaviour:
@@ -65924,6 +67343,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb09e60e26d6244ca3ef8ba44b59ba5, type: 3}
+--- !u!1001 &1729830555
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (4)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 204.90001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -79.00272
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &1730995293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66124,6 +67612,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1930d747932303a4ea5c4052d124d464, type: 3}
+--- !u!1001 &1734504216
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (1)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 188.90688
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -79.00272
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &1736593858
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66451,6 +68008,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1818230043}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1753584599
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (32)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 285
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!4 &1755121176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4185242640295580194, guid: 1930d747932303a4ea5c4052d124d464,
@@ -67945,6 +69571,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1930d747932303a4ea5c4052d124d464, type: 3}
+--- !u!1001 &1832866730
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (20)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 273
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1 &1839366576
 GameObject:
   m_ObjectHideFlags: 0
@@ -68982,6 +70677,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1791236794}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1877144983
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (26)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 287.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -28.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!4 &1881829598 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4185242640295580194, guid: 1930d747932303a4ea5c4052d124d464,
@@ -69211,6 +70975,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb09e60e26d6244ca3ef8ba44b59ba5, type: 3}
+--- !u!1001 &1891105014
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (10)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 272.80002
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -79.00272
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1 &1895299712
 GameObject:
   m_ObjectHideFlags: 0
@@ -69455,7 +71288,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 2
   vidaInimigo: 3
-  PlayerTransform: {fileID: 2066007319}
   distanciaDeDeteccao: 10
   face: 1
   limite: 0
@@ -69540,7 +71372,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1933183630 stripped
 Transform:
@@ -69911,6 +71743,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1172317800}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1952889501
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (23)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 270.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -37
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 42
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &1952982091
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72451,6 +74352,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1029855943}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2056020536
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (8)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 242.90001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -79.00272
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 27
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &2058143108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72852,7 +74822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066007318}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.25, y: 1.7, z: 0}
+  m_LocalPosition: {x: 260.80002, y: -76, z: 0}
   m_LocalScale: {x: 0.19338, y: 0.19338, z: 0.19338}
   m_Children:
   - {fileID: 775231233}
@@ -72860,7 +74830,7 @@ Transform:
   - {fileID: 1018988145}
   - {fileID: 45744750}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2066007320
 MonoBehaviour:
@@ -72910,7 +74880,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   forcaPulo: 2400
-  forcaPuloDuplo: 400
+  forcaPuloDuplo: 1300
   verificaChao: {fileID: 1079954496}
   oChao:
     serializedVersion: 2
@@ -72933,8 +74903,10 @@ MonoBehaviour:
   UpgradeTiro: 0
   audioUpgradePerna: {fileID: 1839366578}
   estaChao: 0
+  DanoInimigoBool: 0
   DanoMissil: 2
   DanoInimigo: 1
+  tempoTomarDano: 2
   verificaAtaque: {fileID: 1018988145}
   raioAtaque: 1.5
   paraBater:
@@ -73127,6 +75099,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5eb09e60e26d6244ca3ef8ba44b59ba5, type: 3}
+--- !u!1001 &2074842950
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (6)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 226.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -79.00272
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1 &2079850916
 GameObject:
   m_ObjectHideFlags: 0
@@ -73216,6 +75257,75 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 631992233}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2087327894
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png (31)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 286.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.900001
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &2089558024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73607,90 +75717,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1001 &2097739455
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_Name
-      value: "Ch\xE3o quebrado-1.png"
-      objectReference: {fileID: 0}
-    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 59.985516
-      objectReference: {fileID: 0}
-    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.4798522
-      objectReference: {fileID: 0}
-    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2.4
-      objectReference: {fileID: 0}
-    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2.4
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!4 &2105564600 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4185242640295580194, guid: 1930d747932303a4ea5c4052d124d464,
@@ -73811,7 +75837,7 @@ Transform:
   - {fileID: 1687612670}
   - {fileID: 134040724}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2118352485 stripped
 Transform:
@@ -74420,6 +76446,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a86cce99b4e5cd64bbaf97767f68106e, type: 3}
+--- !u!1001 &1706599657835915275
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 178540704022780001, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_Name
+      value: "Ch\xE3o quebrado-1.png"
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 61.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.4798522
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9164952451080472827, guid: fca01581312f8aa47a011647fb2697c2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fca01581312f8aa47a011647fb2697c2, type: 3}
 --- !u!1001 &4200328482280347517
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class JogadorScript : MonoBehaviour
 {
     [Header("Movimento")]
     public float speed = 10f;
-    public float forcaPulo = 50f;
-    public float forcaPuloDuplo = 200f;
+    public float forcaPulo = 2400f;
+    public float forcaPuloDuplo = 1300f;
     public Transform verificaChao;
     public LayerMask oChao;
     public float raio = 0.2f;
@@ -42,6 +43,7 @@ public class JogadorScript : MonoBehaviour
     public bool estaChao = false;
     private Rigidbody2D body;
     SpriteRenderer sprite;
+    public bool DanoInimigoBool;
 
 
 
@@ -50,6 +52,8 @@ public class JogadorScript : MonoBehaviour
     // public Text texto;
     public int DanoMissil = 2;
     public int DanoInimigo = 1;
+    public float tempoTomarDano = 2f;
+    private Text MensagemNaTela;
 
 
     [Header("Ataque")]
@@ -83,6 +87,8 @@ public class JogadorScript : MonoBehaviour
         roboTransform = GetComponent<Transform>();
         face = true;
         ficaParado = false;
+        DanoInimigoBool = false;
+        MensagemNaTela = GameObject.FindGameObjectWithTag("MensagemNaTela").GetComponent<Text>();
     }
 
     IEnumerator Paradinha()
@@ -93,6 +99,18 @@ public class JogadorScript : MonoBehaviour
 
     private void Update()
     {
+         tempoTomarDano -= Time.deltaTime;
+        if (DanoInimigoBool && tempoTomarDano <= 0f) 
+        {
+            DamageTaked(DanoInimigo);
+            animator.SetBool("Hurt", true);
+            tempoTomarDano = 2f;
+        }
+        else
+        {
+            animator.SetBool("Hurt", false);
+        }
+
         if (ficaParado) 
         {
             transform.Translate(new Vector2(0,0) * Time.deltaTime);
@@ -108,13 +126,10 @@ public class JogadorScript : MonoBehaviour
         
         }
 
-
-
         if (Input.GetKey(KeyAndarDireita) && ficaParado == false)
         {
             transform.Translate(new Vector2(speed, 0) * Time.deltaTime) ;
             animator.SetBool("Velocidade2", true);
-
         }
         else if (Input.GetKey(KeyAndarEsquerda))
         {
@@ -130,20 +145,12 @@ public class JogadorScript : MonoBehaviour
         {
             Fire = true;
             animator.SetBool("Fire", true);
-
         }
         else
         {
             Fire = false;
             animator.SetBool("Fire", false);
         }
-
-        //  if ((speed > 0 && sprite.flipX == true) || (speed < 0 && sprite.flipX == false))
-        //  {
-        //   Flip();
-        // }
-
-
 
         if (!paraJogadorCut)
         {
@@ -153,13 +160,7 @@ public class JogadorScript : MonoBehaviour
                 {
                     animator.SetBool("Jump", true);
                     body.AddForce(new Vector2(0f, forcaPulo));
-
-
-
                 }
-
-
-
                 else if (body.velocity.y > 0 && !Input.GetKeyDown(KeyPular) && podePuloDuplo > 0)
                 {
                     body.velocity += Vector2.up * -0.8f;
@@ -202,40 +203,15 @@ public class JogadorScript : MonoBehaviour
                 {
                     tempoProximoAtaque -= Time.deltaTime;
                 }
-
                 if (Vida <= 0)
                 {
                     SceneManager.LoadScene("GameOver");
                 }
-
-                // float move = Input.GetAxis("Horizontal");
-
-                // Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal") + deslizador, 0.0f + Levitacao, 0.0f);
-                // transform.position = transform.position + horizontal * speed;
-
-                // if ((speed > 0 && sprite.flipX == true) || (speed < 0 && sprite.flipX == false))
-                //  {
-                //      Flip();
-                // }
-
-                // axis = Input.GetAxis("Horizontal");
-
-                // velocidade = new Vector2(axis * speed, GetComponent<Rigidbody2D>().velocity.y);
-                // animator.SetFloat("Velocidade", Mathf.Abs(axis));
-
-
-
-
-
-
                 if (!estaChao)
                     animator.SetBool("Jump", false);
             }
         }
-
-
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
@@ -271,35 +247,22 @@ public class JogadorScript : MonoBehaviour
         if (collision.gameObject.tag == "Missil")
         {
             DamageTaked(DanoMissil);
-            animator.SetBool("Hurt", true);
+           
         }
-        else
-        {
-            animator.SetBool("Hurt", false);
-        }
-
-
-
-
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Ausapao"))
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            MensagemNaTela.enabled = true;
+            if (Input.GetKey(KeyCode.E))
             {
                 //tocar som do alsapao
                 Destroy(collision.gameObject);
+                MensagemNaTela.enabled = false;
             }
-
-
-
-
         }
     }
-
-
-
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Cutscenes")
@@ -314,31 +277,35 @@ public class JogadorScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "daDano")
-        {
-            DamageTaked(DanoInimigo);
-            animator.SetBool("Hurt", true);
-        }
-        else
-        {
-            animator.SetBool("Hurt", false);
-        }
-
-
+    
         if (collision.gameObject.tag == "Mata")
         {
             Destroy(gameObject);
             SceneManager.LoadScene("GameOver");
         }
     }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
 
+        if (collision.gameObject.tag == "daDano")
+        {
+            DanoInimigoBool = true;
+
+        }
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "daDano")
+        {
+            DanoInimigoBool = false;
+        }
+    }
 
     public void DamageTaked(int damage)
     {
-
+        
         for (int i = 0; i<= damage; i++) 
         {
-
         Vida = Vida - 1;
             if (Vida >= 0)
             {
@@ -350,12 +317,7 @@ public class JogadorScript : MonoBehaviour
             {
                 SceneManager.LoadScene("GameOver");
             }
-        
         }
-
-
- 
-
     }
 
     IEnumerator ColorDamageChange()
@@ -372,8 +334,6 @@ public class JogadorScript : MonoBehaviour
         Vector3 scala = roboTransform.localScale;
         scala.x *= -1;
         roboTransform.localScale = scala;
-       // sprite.flipX = !sprite.flipX;
-      //  verificaAtaque.localPosition = new Vector2(-verificaAtaque.localPosition.x, verificaAtaque.localPosition.y);
     }
 
     void JogadorAtaque()
