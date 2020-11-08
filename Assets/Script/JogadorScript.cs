@@ -79,9 +79,17 @@ public class JogadorScript : MonoBehaviour
 
     void Start()
     {
+
+
+
         body = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        animator.SetBool("Awake", true);
+        animator.SetBool("Idle", false);
+        animator.SetBool("ParadoComBota", false);
+        animator.SetBool("ParadoComBotaEArma", false);
+
         paraJogadorCut = true;
         StartCoroutine(Paradinha());
         roboTransform = GetComponent<Transform>();
@@ -89,6 +97,7 @@ public class JogadorScript : MonoBehaviour
         ficaParado = false;
         DanoInimigoBool = false;
         MensagemNaTela = GameObject.FindGameObjectWithTag("MensagemNaTela").GetComponent<Text>();
+        MensagemNaTela.enabled = false;
     }
 
     IEnumerator Paradinha()
