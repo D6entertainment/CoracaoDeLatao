@@ -19264,7 +19264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1668044586}
   - component: {fileID: 1668044589}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ausapao-1.png
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21274,15 +21274,15 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4751397908912446419, guid: 090e841596c0838468601a7e6222ff47,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 1005937015168782353, guid: 090e841596c0838468601a7e6222ff47,
         type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4751397908912446419, guid: 090e841596c0838468601a7e6222ff47,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6377029808471817934, guid: 090e841596c0838468601a7e6222ff47, type: 3}
@@ -22773,7 +22773,6 @@ MonoBehaviour:
   face: 1
   ficaParado: 0
   puloDuplo: 0
-  podePuloDuplo: 0
   UpgradeTiro: 0
   audioUpgradePerna: {fileID: 1839366578}
   estaChao: 0
@@ -22799,6 +22798,10 @@ MonoBehaviour:
   - {fileID: 769690138}
   - {fileID: 417702374}
   - {fileID: 116375674}
+  Awake: 0
+  Idle: 1
+  ParadoComBota: 0
+  ParadoComBotaEArma: 0
 --- !u!50 &2066007323
 Rigidbody2D:
   serializedVersion: 4

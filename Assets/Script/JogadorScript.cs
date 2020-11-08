@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -28,14 +29,14 @@ public class JogadorScript : MonoBehaviour
     public bool ficaParado;
 
     [Header("Upgrades")]
-
-    public int puloDuplo = 1;
-    public int podePuloDuplo = 1;
+    public bool puloDuplo = false;
     public bool UpgradeTiro = false;
     public AudioSource audioUpgradePerna;
+    
+
     //public Transform tiro;
     //public Transform posicaoCanoDaArma;
-    //private alsapao alsapao;
+   
 
 
     [Header("Verificador")]
@@ -48,8 +49,6 @@ public class JogadorScript : MonoBehaviour
 
 
     [Header("outros")]
-
-    // public Text texto;
     public int DanoMissil = 2;
     public int DanoInimigo = 1;
     public float tempoTomarDano = 2f;
@@ -64,8 +63,10 @@ public class JogadorScript : MonoBehaviour
 
     [Header("Vida")]
     public int Vida = 10;
-    // public int vidaCheia = 10;
+    
     public GameObject[] lifeObject;
+
+    //dificil Pakas
 
     [Header("Animator")]
     Animator animator;
@@ -73,25 +74,27 @@ public class JogadorScript : MonoBehaviour
     Vector2 velocidade;
     bool ladoDireito = true;
     bool Fire = true;
-    //bool Jump = true;
+    public bool Awake = false;
+    public bool Idle = true;
+    public bool ParadoComBota = false;
+    public bool ParadoComBotaEArma = false;
 
 
 
     void Start()
     {
-
-
+        AcharObjetoVida();
+        paraBater = LayerMask.GetMask("paraBater");
+        oChao = LayerMask.GetMask("Chao");
 
         body = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        animator.SetBool("Awake", true);
-        animator.SetBool("Idle", false);
-        animator.SetBool("ParadoComBota", false);
-        animator.SetBool("ParadoComBotaEArma", false);
+        animator.SetBool("Awake", Awake);
+        animator.SetBool("Idle", Idle);
+        animator.SetBool("ParadoComBota", ParadoComBota);
+        animator.SetBool("ParadoComBotaEArma", ParadoComBotaEArma);
 
-        paraJogadorCut = true;
-        StartCoroutine(Paradinha());
         roboTransform = GetComponent<Transform>();
         face = true;
         ficaParado = false;
@@ -100,15 +103,11 @@ public class JogadorScript : MonoBehaviour
         MensagemNaTela.enabled = false;
     }
 
-    IEnumerator Paradinha()
-    {
-        yield return new WaitForSeconds(3f);
-        paraJogadorCut = false;
-    }
 
     private void Update()
     {
-         tempoTomarDano -= Time.deltaTime;
+
+        tempoTomarDano -= Time.deltaTime;
         if (DanoInimigoBool && tempoTomarDano <= 0f) 
         {
             DamageTaked(DanoInimigo);
@@ -135,51 +134,63 @@ public class JogadorScript : MonoBehaviour
         
         }
 
-        if (Input.GetKey(KeyAndarDireita) && ficaParado == false)
-        {
-            transform.Translate(new Vector2(speed, 0) * Time.deltaTime) ;
-            animator.SetBool("Velocidade2", true);
-        }
-        else if (Input.GetKey(KeyAndarEsquerda))
-        {
-            transform.Translate(new Vector2(-speed, 0) * Time.deltaTime);
-
-            animator.SetBool("Velocidade2", true);
-
-        } else if (!Input.GetKey(KeyAndarDireita) && !Input.GetKey(KeyAndarEsquerda)) 
-        {
-            animator.SetBool("Velocidade2", false);
-        }
-        if (Input.GetKeyDown(KeyBater))
-        {
-            Fire = true;
-            animator.SetBool("Fire", true);
-        }
-        else
-        {
-            Fire = false;
-            animator.SetBool("Fire", false);
-        }
+        
 
         if (!paraJogadorCut)
         {
             if (paraJogadorIma == 0)
             {
-                if (Input.GetKeyDown(KeyPular) && estaChao)
+                if (Input.GetKeyDown(KeyPular) && estaChao && puloDuplo == false)
                 {
-                    animator.SetBool("Jump", true);
+                    
+                    
+                      
                     body.AddForce(new Vector2(0f, forcaPulo));
+                    
+      
                 }
-                else if (body.velocity.y > 0 && !Input.GetKeyDown(KeyPular) && podePuloDuplo > 0)
+                if(Input.GetKeyDown(KeyPular) && estaChao && puloDuplo) 
                 {
-                    body.velocity += Vector2.up * -0.8f;
-                    podePuloDuplo--;
+                 
+                    body.AddForce(new Vector2(0f, forcaPulo + forcaPuloDuplo));
+                    
                 }
+    
+
+
+                if (Input.GetKey(KeyAndarDireita) && ficaParado == false)
+                {
+                    transform.Translate(new Vector2(speed, 0) * Time.deltaTime);
+                    animator.SetBool("Velocidade2", true);
+                }
+                else if (Input.GetKey(KeyAndarEsquerda))
+                {
+                    transform.Translate(new Vector2(-speed, 0) * Time.deltaTime);
+
+                    animator.SetBool("Velocidade2", true);
+
+                }
+                else if (!Input.GetKey(KeyAndarDireita) && !Input.GetKey(KeyAndarEsquerda))
+                {
+                    animator.SetBool("Velocidade2", false);
+                }
+                if (Input.GetKeyDown(KeyBater))
+                {
+                    Fire = true;
+                    animator.SetBool("Fire", true);
+                }
+                else
+                {
+                    Fire = false;
+                    animator.SetBool("Fire", false);
+                }
+
+
+
 
             }
         }
     }
-
     private void FixedUpdate()
     {
         if (imaAtivado == true)
@@ -216,7 +227,7 @@ public class JogadorScript : MonoBehaviour
                 {
                     SceneManager.LoadScene("GameOver");
                 }
-                if (!estaChao)
+                if (!estaChao) 
                     animator.SetBool("Jump", false);
             }
         }
@@ -240,18 +251,25 @@ public class JogadorScript : MonoBehaviour
         }
         if (collision.CompareTag("UpgradePerna"))
         {
+            paraJogadorCut = true;
+            StartCoroutine(Paradinha());
+            animator.SetBool("jump",false);
+            animator.SetBool("Velocidade2", false);
+            animator.SetBool("Hurt", false);
+            animator.SetBool("Fire", false);
             audioUpgradePerna.Play();
-            forcaPulo += forcaPuloDuplo;
-            Destroy(collision.gameObject);
+            puloDuplo = true;
+                Awake = false;
+                Idle = false;
+                ParadoComBota = true;
+                ParadoComBotaEArma = false;
+                MudarEstado();
+                Destroy(collision.gameObject);
         }
         if (collision.CompareTag("UpgradeTiro"))
         {
             UpgradeTiro = true;
             Destroy(collision.gameObject);
-        }
-        if (collision.CompareTag("Ausapao"))
-        {
-            //      texto.enabled = true;
         }
         if (collision.gameObject.tag == "Missil")
         {
@@ -280,10 +298,9 @@ public class JogadorScript : MonoBehaviour
         }
         if (collision.CompareTag("Ausapao"))
         {
-            //     texto.enabled = false;
+                 MensagemNaTela.enabled = false;
         }
     }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
     
@@ -310,6 +327,22 @@ public class JogadorScript : MonoBehaviour
         }
     }
 
+
+    public void AcharObjetoVida() 
+    {
+        lifeObject[0] = GameObject.Find("Image0");
+        lifeObject[1] = GameObject.Find("Image1");
+        lifeObject[2] = GameObject.Find("Image2");
+        lifeObject[3] = GameObject.Find("Image3");
+        lifeObject[4] = GameObject.Find("Image4");
+        lifeObject[5] = GameObject.Find("Image5");
+        lifeObject[6] = GameObject.Find("Image6");
+        lifeObject[7] = GameObject.Find("Image7");
+        lifeObject[8] = GameObject.Find("Image8");
+        lifeObject[9] = GameObject.Find("Image9");
+
+    }
+
     public void DamageTaked(int damage)
     {
         
@@ -328,14 +361,24 @@ public class JogadorScript : MonoBehaviour
             }
         }
     }
-
+    public void MudarEstado() 
+    {
+        animator.SetBool("Awake", Awake);
+        animator.SetBool("Idle", Idle);
+        animator.SetBool("ParadoComBota", ParadoComBota);
+        animator.SetBool("ParadoComBotaEArma", ParadoComBotaEArma);
+    }
+    IEnumerator Paradinha()
+    {
+        yield return new WaitForSeconds(3f);
+        paraJogadorCut = false;
+    }
     IEnumerator ColorDamageChange()
     {
         gameObject.GetComponent<SpriteRenderer>().color = Color.red;
         yield return new WaitForSeconds(0.7f);
         gameObject.GetComponent<SpriteRenderer>().color = new Color(255f, 255f, 255f);
     }
-
     void Flip()
     {
         face = !face;
@@ -344,7 +387,6 @@ public class JogadorScript : MonoBehaviour
         scala.x *= -1;
         roboTransform.localScale = scala;
     }
-
     void JogadorAtaque()
     {
         //  if (UpgradeTiro == false) 
@@ -361,7 +403,6 @@ public class JogadorScript : MonoBehaviour
 
         // }
     }
-
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
