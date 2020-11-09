@@ -29,6 +29,13 @@ TagManager:
   - posicaoInicial
   - checPoint
   - Save
+  - checPoint2
+  - checPoint3
+  - FimFase
+  - Awak
+  - checPoint4
+  - checPoint5
+  - checPoint6
   layers:
   - Default
   - TransparentFX

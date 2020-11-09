@@ -7,15 +7,15 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class StartLevel : MonoBehaviour
 {
-    public CinemachineVirtualCamera CineMachine;
+    private CinemachineVirtualCamera CineMachine;
     
 
     public Transform prefab;
     private JogadorScript player;
-    public GameObject Save;
+    public GameObject SavePrefab;
     public GameObject posicaoSave;
     public GameObject posicaoInicial;
-    public GameObject PlayerObjeto;
+    private GameObject PlayerObjeto;
 
 
     void Start()
@@ -23,7 +23,7 @@ public class StartLevel : MonoBehaviour
 
         //var objetos = GameObject.FindGameObjectsWithTag("GameOver");
 
-        Instantiate(Save, posicaoSave.transform.position, Quaternion.identity);
+        Instantiate(SavePrefab, posicaoSave.transform.position, Quaternion.identity);
         posicaoInicial = GameObject.FindGameObjectWithTag("posicaoInicial");
 
 
@@ -36,7 +36,7 @@ public class StartLevel : MonoBehaviour
         }
 
 
-        PlayerObjeto = GameObject.FindGameObjectWithTag("Player");
+       // PlayerObjeto = GameObject.FindGameObjectWithTag("Player");
         CineMachine = GameObject.FindGameObjectWithTag("CineMachine").GetComponent<CinemachineVirtualCamera>();
         CineMachine.Follow = PlayerObjeto.transform;
         //Instantiate(prefab, prefab.transform.position, Quaternion.identity);

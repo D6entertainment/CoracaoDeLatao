@@ -106,6 +106,9 @@ public class JogadorScript : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         animator.SetBool("Awake", Awake);
+        paraJogadorCut = true;
+        StartCoroutine(Paradinha());
+        Idle = true;
         animator.SetBool("Idle", Idle);
         animator.SetBool("ParadoComBota", ParadoComBota);
         animator.SetBool("ParadoComBotaEArma", ParadoComBotaEArma);
@@ -132,7 +135,7 @@ public class JogadorScript : MonoBehaviour
         {
             DamageTaked(DanoInimigo);
             animator.SetBool("Hurt", true);
-            tempoTomarDano = 2f;
+            tempoTomarDano = 3f;
         }
         else
         {
@@ -254,7 +257,20 @@ public class JogadorScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(collision.CompareTag("Awak")) 
+        {
+            Awake = false;
+        }
 
+
+        if (collision.CompareTag("FimFase")) 
+        {
+            fase += 1;
+            SaveGame.salvar();
+            SceneManager.LoadScene("Cidade");
+
+
+        }
 
         if (collision.CompareTag("checPoint"))
         {
@@ -271,6 +287,67 @@ public class JogadorScript : MonoBehaviour
             // varialvel carregar jogo  = true;
 
         }
+        if (collision.CompareTag("checPoint2"))
+        {
+
+            if (checPoint1 != 2)
+            {
+                
+                posicaoCheckPoint = collision.transform.position;
+                checPoint1 = 2;
+                TemCheckPoint = true;
+                SaveGame.salvar();
+            }
+        }
+        if (collision.CompareTag("checPoint3"))
+        {
+
+            if (checPoint1 != 3)
+            {
+                
+                posicaoCheckPoint = collision.transform.position;
+                checPoint1 = 3;
+                TemCheckPoint = true;
+                SaveGame.salvar();
+            }
+        }
+        if (collision.CompareTag("checPoint4"))
+        {
+
+            if (checPoint1 != 4)
+            {
+                
+                posicaoCheckPoint = collision.transform.position;
+                checPoint1 = 4;
+                TemCheckPoint = true;
+                SaveGame.salvar();
+            }
+        }
+        if (collision.CompareTag("checPoint5"))
+        {
+
+            if (checPoint1 != 5)
+            {
+
+                posicaoCheckPoint = collision.transform.position;
+                checPoint1 = 5;
+                TemCheckPoint = true;
+                SaveGame.salvar();
+            }
+        }
+        if (collision.CompareTag("checPoint6"))
+        {
+
+            if (checPoint1 != 6)
+            {
+
+                posicaoCheckPoint = collision.transform.position;
+                checPoint1 = 6;
+                TemCheckPoint = true;
+                SaveGame.salvar();
+            }
+        }
+
 
 
 
