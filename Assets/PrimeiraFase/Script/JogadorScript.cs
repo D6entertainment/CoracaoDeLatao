@@ -7,7 +7,20 @@ using UnityEngine.UI;
 
 public class JogadorScript : MonoBehaviour
 {
+
+    [Header("Save")]
+    //public SaveGameJson save;
+    public int fase = 1;
+    public Vector3 posicaoCheckPoint;
+    //public GameObject posicaoInicioFase;
+    public int checPoint1 = 0;
+    public bool TemCheckPoint = false;
+    public SaveGame SaveGame;
+
     [Header("Movimento")]
+
+    
+
     public float speed = 10f;
     public float forcaPulo = 2400f;
     public float forcaPuloDuplo = 1300f;
@@ -83,6 +96,8 @@ public class JogadorScript : MonoBehaviour
 
     void Start()
     {
+
+        SaveGame = GameObject.FindGameObjectWithTag("Save").GetComponent<SaveGame>();
         AcharObjetoVida();
         paraBater = LayerMask.GetMask("paraBater");
         oChao = LayerMask.GetMask("Chao");
@@ -106,7 +121,12 @@ public class JogadorScript : MonoBehaviour
 
     private void Update()
     {
-
+        if(Vida < 10) 
+        {
+            int x = 10;
+            int dano = x - Vida;
+            DamageTaked(dano);
+        }
         tempoTomarDano -= Time.deltaTime;
         if (DanoInimigoBool && tempoTomarDano <= 0f) 
         {
@@ -234,6 +254,31 @@ public class JogadorScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
+
+        if (collision.CompareTag("checPoint"))
+        {
+
+            if (checPoint1 != 1)
+            {
+                Debug.Log("cacatua");
+                posicaoCheckPoint = collision.transform.position;
+                checPoint1 = 1;
+                TemCheckPoint = true;
+                SaveGame.salvar();
+            }
+
+            // varialvel carregar jogo  = true;
+
+        }
+
+
+
+
+
+
+
+
 
         if (collision.CompareTag("MorteInstantanea"))
         {

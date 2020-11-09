@@ -25,6 +25,10 @@ TagManager:
   - FimdaVida
   - AguaQueLevanta
   - MensagemNaTela
+  - CineMachine
+  - posicaoInicial
+  - checPoint
+  - Save
   layers:
   - Default
   - TransparentFX
