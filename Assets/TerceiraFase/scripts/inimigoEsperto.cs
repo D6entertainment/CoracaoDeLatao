@@ -9,11 +9,13 @@ public class inimigoEsperto : MonoBehaviour
     public int vidaInimigo = 3;
     private SpriteRenderer sprite;
     private Vector2 posicaoPlayer;
-    private GameObject PlayerTransform;
+    public GameObject PlayerTransform;
     private Animator animator;
     public float distanciaDeDeteccao = 10f;
     public bool face = true;
     public bool limite;
+
+
 
     private void Start()
     {

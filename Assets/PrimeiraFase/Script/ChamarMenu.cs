@@ -5,10 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class ChamarMenu : MonoBehaviour
 {
+    private JogadorScript Player;
+
 
     public void chamarMenu()
     {
+
         SceneManager.LoadScene("Menu");
+    }
+
+    public void save() 
+    {
+
+        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
+        Player.SaveGame.salvar();
+    
     }
 
 

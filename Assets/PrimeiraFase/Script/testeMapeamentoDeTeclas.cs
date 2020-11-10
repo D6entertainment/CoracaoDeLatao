@@ -7,12 +7,17 @@ using UnityEngine.UI;
 
 public class testeMapeamentoDeTeclas : MonoBehaviour
 {
-    public JogadorScript ScriptAndar;
+    private JogadorScript ScriptAndar;
     public Text texto;
-    private bool AndarDireita, AndarEsquerda, Pular, Bater = false;
+    private bool AndarDireita, AndarEsquerda, Pular, Bater, Interagir = false;
+    public SaveGame save;
 
 
+    private void Start()
+    {
+        ScriptAndar = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
 
+    }
 
     private void Update()
     {
@@ -71,10 +76,24 @@ public class testeMapeamentoDeTeclas : MonoBehaviour
                 }
             }
         }
+
+        if (Interagir == true)
+        {
+            foreach (KeyCode kcode in System.Enum.GetValues(typeof(KeyCode)))
+            {
+                if (Input.GetKey(kcode))
+                {
+                    texto.text = (kcode).ToString();
+                    ScriptAndar.KeyInteragir = kcode;
+                    Interagir = false;
+                }
+            }
+        }
     }
 
     public void mudarTeclaAndarDireita()
     {
+        ScriptAndar = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
         AndarDireita = true;
 
 
@@ -82,6 +101,7 @@ public class testeMapeamentoDeTeclas : MonoBehaviour
     }
     public void mudarTeclaAndarEsquerda()
     {
+        ScriptAndar = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
         AndarEsquerda = true;
 
 
@@ -89,6 +109,7 @@ public class testeMapeamentoDeTeclas : MonoBehaviour
     }
     public void mudarTeclaAndarPular()
     {
+        ScriptAndar = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
         Pular = true;
 
 
@@ -96,7 +117,16 @@ public class testeMapeamentoDeTeclas : MonoBehaviour
     }
     public void mudarTeclaBater()
     {
+        ScriptAndar = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
         Bater = true;
+
+
+
+    }
+    public void mudarTeclaInteragir()
+    {
+        ScriptAndar = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
+        Interagir = true;
 
 
 

@@ -126,9 +126,9 @@ public class JogadorScript : MonoBehaviour
     {
         if(Vida < 10) 
         {
-            int x = 10;
-            int dano = x - Vida;
-            DamageTaked(dano);
+           // int x = 10;
+           // int dano = x - Vida;
+          //  DamageTaked(dano);
         }
         tempoTomarDano -= Time.deltaTime;
         if (DanoInimigoBool && tempoTomarDano <= 0f) 
@@ -467,7 +467,7 @@ public class JogadorScript : MonoBehaviour
 
     public void DamageTaked(int damage)
     {
-        
+        Debug.Log(damage);
         for (int i = 0; i<= damage; i++) 
         {
         Vida = Vida - 1;

@@ -175,6 +175,41 @@ public class SaveGame : MonoBehaviour
 
     }
 
+    public string retornaStringKeys(string Key) 
+    {
+        if (Key.Equals("KeyAndarDireita"))
+        {
+            return dados.KeyAndarDireita.ToString();
+        }
+        else if (Key.Equals("KeyAndarEsquerda")) 
+        {
+            return dados.KeyAndarDireita.ToString();
+        
+        }
+        else if (Key.Equals("KeyPular"))
+        {
+            return dados.KeyPular.ToString();
+
+        }
+        else if (Key.Equals("KeyBater"))
+        {
+            return dados.KeyBater.ToString();
+
+        }
+        else if (Key.Equals("KeyInteragir"))
+        {
+            return dados.KeyInteragir.ToString();
+
+        }
+        else 
+        {
+            return "erro";
+        }
+
+    }
+
+
+
 
 }
 
