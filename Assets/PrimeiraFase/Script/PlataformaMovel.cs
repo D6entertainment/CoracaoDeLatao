@@ -14,6 +14,14 @@ public class PlataformaMovel : MonoBehaviour
     private float m_Time;
     private bool m_Waiting;
 
+
+    private void Start()
+    {
+        Player = GameObject.FindGameObjectWithTag("Player").transform ;
+    }
+
+
+
     private void Update()
     {
         if (m_Waiting)

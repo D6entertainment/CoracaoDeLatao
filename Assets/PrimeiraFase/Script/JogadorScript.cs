@@ -169,6 +169,7 @@ public class JogadorScript : MonoBehaviour
                     
                       
                     body.AddForce(new Vector2(0f, forcaPulo));
+                    animator.SetBool("jump",true);
                     
       
                 }
