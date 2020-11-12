@@ -36,6 +36,8 @@ TagManager:
   - checPoint4
   - checPoint5
   - checPoint6
+  - FimFase1
+  - FimFase2
   layers:
   - Default
   - TransparentFX

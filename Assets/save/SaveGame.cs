@@ -4,8 +4,13 @@ using UnityEngine;
 using System.IO;
 using UnityEngine.SceneManagement;
 using System;
+using UnityEngine.UI;
 public class SaveGame : MonoBehaviour
 {
+
+
+
+
     private string dataP;
     public infos dados;
     public JogadorScript player;
@@ -40,10 +45,11 @@ public class SaveGame : MonoBehaviour
             dataP = Path.Combine(Application.dataPath, "infos.json"); // criando o diretorio do arquivo na raiz do projeto e com nome infos.json
             dados = new infos();
             string nomeCenaAtiva = SceneManager.GetActiveScene().name;
-            if (nomeCenaAtiva.Equals("Ferro Velho") || nomeCenaAtiva.Equals("Cidade") || nomeCenaAtiva.Equals("TerceiraFase"))
+            if (nomeCenaAtiva.Equals("Ferro Velho") || nomeCenaAtiva.Equals("Cidade") || nomeCenaAtiva.Equals("TerceiraFase_teste"))
             {
                 player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
             }
+
 
         }
         else
@@ -52,7 +58,7 @@ public class SaveGame : MonoBehaviour
             dataP = Path.Combine(Application.dataPath, "infos.json"); // criando o diretorio do arquivo na raiz do projeto e com nome infos.json
             dados = new infos();
             string nomeCenaAtiva = SceneManager.GetActiveScene().name;
-            if (nomeCenaAtiva.Equals("Ferro Velho") || nomeCenaAtiva.Equals("Cidade") || nomeCenaAtiva.Equals("TerceiraFase"))
+            if (nomeCenaAtiva.Equals("Ferro Velho") || nomeCenaAtiva.Equals("Cidade") || nomeCenaAtiva.Equals("TerceiraFase_teste"))
             {
                 player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
             }
@@ -149,7 +155,7 @@ public class SaveGame : MonoBehaviour
         }
         if (dados.fase == 3)
         {
-            SceneManager.LoadScene("TerceiraFase");
+            SceneManager.LoadScene("TerceiraFase_teste");
 
 
 
@@ -181,15 +187,16 @@ public class SaveGame : MonoBehaviour
     }
     private void Update()
     {
-        if (TocaVideo) 
+        if (TocaVideo)
         {
-        timeToStop -= Time.deltaTime;
+            timeToStop -= Time.deltaTime;
             if (timeToStop <= 0f)
             {
 
                 SceneManager.LoadScene("Ferro Velho");
             }
         }
+
     }
     public void NovoJogo()
     {
@@ -219,15 +226,17 @@ public class SaveGame : MonoBehaviour
         video();
 
     }
+    public bool TemChecpointMetodo()
+    {
 
+        return dados.TemCheckPoint;
+    }
     public void video() 
     {
         
         timeToPlay = timeToStop - 0.1f;
         VideoPlayer.SetActive(true);
         TocaVideo = true;
-        
-
 
     }
     IEnumerator BackPlayerToLive()
@@ -268,6 +277,7 @@ public class SaveGame : MonoBehaviour
         {
             return "erro";
         }
+
 
     }
 

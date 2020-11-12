@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1302202168406891486}
   - component: {fileID: 1302202168406891473}
   - component: {fileID: 1302202168406891485}
-  - component: {fileID: 1302202168406891482}
+  - component: {fileID: 2276414767108296415}
   m_Layer: 11
   m_Name: robo1
   m_TagString: daDano
@@ -144,7 +144,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.0644073, y: 1.5517311}
   m_EdgeRadius: 0
---- !u!50 &1302202168406891482
+--- !u!50 &2276414767108296415
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0

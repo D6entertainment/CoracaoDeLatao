@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEngine.Video;
 
 public class JogadorScript : MonoBehaviour
 {
@@ -97,7 +98,14 @@ public class JogadorScript : MonoBehaviour
     public bool ParadoComBota = false;
     public bool ParadoComBotaEArma = false;
 
-
+    [Header("Vídeo")]
+    public GameObject VideoPlayerOBJFinalFase1;
+    public float timeToStop = 34f;
+    public float timeToPlay;
+    public bool fimCut;
+    public Mutar Mutando;
+    private bool TocaVideo = false;
+    private VideoPlayer videoPlayer;
 
     void Start()
     {
@@ -125,11 +133,31 @@ public class JogadorScript : MonoBehaviour
         DanoInimigoBool = false;
         MensagemNaTela = GameObject.FindGameObjectWithTag("MensagemNaTela").GetComponent<Text>();
         MensagemNaTela.enabled = false;
+
+        Mutando = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Mutar>();
+        videoPlayer = VideoPlayerOBJFinalFase1.GetComponent<VideoPlayer>();
+        videoPlayer.targetCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        
+        VideoPlayerOBJFinalFase1.SetActive(false);
+
+
     }
 
 
     private void Update()
     {
+        if (TocaVideo)
+        {
+            timeToStop -= Time.deltaTime;
+            if (timeToStop <= 0f)
+            {
+
+                SceneManager.LoadScene("Cidade");
+            }
+        }
+
+
+
         if (salvo) 
         {
             Salvando.SetActive(true);
@@ -262,7 +290,10 @@ public class JogadorScript : MonoBehaviour
                     SceneManager.LoadScene("GameOver");
                 }
                 if (!estaChao) 
-                    animator.SetBool("Jump", false);
+                {
+                
+                }
+                   // animator.SetBool("Jump", false);
             }
         }
     }
@@ -276,11 +307,29 @@ public class JogadorScript : MonoBehaviour
 
         if (collision.CompareTag("FimFase")) 
         {
+            
             fase += 1;
+            Mutando.Mutado = true;
+            video();
             SaveGame.salvar();
-            SceneManager.LoadScene("Cidade");
+        }
+        if (collision.CompareTag("FimFase1"))
+        {
 
+            fase += 1;
+            Mutando.Mutado = true;
+            //video();
+            SaveGame.salvar();
+            SceneManager.LoadScene("TerceiraFase_teste");
+        }
+        if (collision.CompareTag("FimFase2"))
+        {
 
+            fase += 1;
+            Mutando.Mutado = true;
+            //video();
+            SaveGame.salvar();
+            SceneManager.LoadScene("Menu");
         }
 
         if (collision.CompareTag("checPoint"))
@@ -430,6 +479,14 @@ public class JogadorScript : MonoBehaviour
            
         }
     }
+    public void video()
+    {
+
+        timeToPlay = timeToStop - 0.1f;
+        VideoPlayerOBJFinalFase1.SetActive(true);
+        TocaVideo = true;
+
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Ausapao"))
@@ -548,6 +605,7 @@ public class JogadorScript : MonoBehaviour
             for (int i = 0; i < AtacarInimigo.Length; i++)
             {
                 AtacarInimigo[i].SendMessage("acertou", 1);
+                Debug.Log(i);
             }
         }
         else if (UpgradeTiro)

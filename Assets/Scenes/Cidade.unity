@@ -7395,15 +7395,20 @@ PrefabInstance:
       propertyPath: m_Name
       value: FimFase
       objectReference: {fileID: 0}
+    - target: {fileID: 8255836698301071692, guid: df247fb7524a8324da5f0707a5371271,
+        type: 3}
+      propertyPath: m_TagString
+      value: FimFase1
+      objectReference: {fileID: 0}
     - target: {fileID: 8255836698301071689, guid: df247fb7524a8324da5f0707a5371271,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 349.1033
+      value: 349.7
       objectReference: {fileID: 0}
     - target: {fileID: 8255836698301071689, guid: df247fb7524a8324da5f0707a5371271,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -9.557053
+      value: -9.2
       objectReference: {fileID: 0}
     - target: {fileID: 8255836698301071689, guid: df247fb7524a8324da5f0707a5371271,
         type: 3}

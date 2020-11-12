@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cidade.unity
     guid: 24d804e6f0ca2f54eba7c932abcad2eb
+  - enabled: 1
+    path: Assets/Scenes/TerceiraFase_teste.unity
+    guid: 63bf629f85ffc8749b0f217138931fd9
   m_configObjects: {}
