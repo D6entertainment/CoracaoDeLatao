@@ -4,35 +4,33 @@ using UnityEngine;
 
 public class Tiro : MonoBehaviour
 {
-    private Rigidbody2D Rb;
-    public float velocidade;
-
-
+    public float Speed = 10;
+    public Inimigo inimigo;
+    public int DanoTiro = 1;
     private void Start()
     {
-        Rb = GetComponent<Rigidbody2D>();
+        inimigo = GameObject.FindGameObjectWithTag("daDano").GetComponent<Inimigo>();
+        
     }
-
     private void Update()
     {
-     
-            transform.Translate(new Vector2(velocidade * Time.deltaTime, 0));
+        transform.Translate(new Vector2(Speed * Time.deltaTime, 0));
+        Destroy(transform.gameObject,2.0f);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Destroy(transform.gameObject);
         
-
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("destruivel")) 
+        if (collision.CompareTag("daDano"))
         {
-            //starta a animação de explosão
-            Destroy(collision.gameObject);
-        
-        }
-        else  
-        {
-            Destroy(this.gameObject);
-             
-        
+            inimigo.acertou(DanoTiro);
+            Destroy(transform.gameObject);
         }
     }
+
+
+
 }

@@ -11,6 +11,18 @@ public class SaveGame : MonoBehaviour
     public JogadorScript player;
 
 
+    [Header("Vídeo")]
+    public GameObject VideoPlayer;
+    public float timeToStop = 43f;
+    public float timeToPlay;
+    public bool fimCut;
+    public bool NovoJogoBool = false;
+
+    public Mutar Mutando;
+    private string Cena;
+    private bool TocaVideo = false;
+
+
     //apagar depois 
 
 
@@ -18,11 +30,32 @@ public class SaveGame : MonoBehaviour
 
     private void Start()
     {
-        dataP = Path.Combine(Application.dataPath, "infos.json"); // criando o diretorio do arquivo na raiz do projeto e com nome infos.json
-        dados = new infos();
-        string nomeCenaAtiva = SceneManager.GetActiveScene().name;
-        if (nomeCenaAtiva.Equals("Ferro Velho") || nomeCenaAtiva.Equals("Cidade") || nomeCenaAtiva.Equals("TerceiraFase")) {
-            player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
+        Cena = SceneManager.GetActiveScene().name;
+        if (Cena.Equals("Menu"))
+        {
+            Mutando = GameObject.FindWithTag("MainCamera").GetComponent<Mutar>();
+            fimCut = false;
+            VideoPlayer = GameObject.Find("Video");
+            VideoPlayer.SetActive(false);
+            dataP = Path.Combine(Application.dataPath, "infos.json"); // criando o diretorio do arquivo na raiz do projeto e com nome infos.json
+            dados = new infos();
+            string nomeCenaAtiva = SceneManager.GetActiveScene().name;
+            if (nomeCenaAtiva.Equals("Ferro Velho") || nomeCenaAtiva.Equals("Cidade") || nomeCenaAtiva.Equals("TerceiraFase"))
+            {
+                player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
+            }
+
+        }
+        else
+        {
+
+            dataP = Path.Combine(Application.dataPath, "infos.json"); // criando o diretorio do arquivo na raiz do projeto e com nome infos.json
+            dados = new infos();
+            string nomeCenaAtiva = SceneManager.GetActiveScene().name;
+            if (nomeCenaAtiva.Equals("Ferro Velho") || nomeCenaAtiva.Equals("Cidade") || nomeCenaAtiva.Equals("TerceiraFase"))
+            {
+                player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
+            }
         }
     }
     public void salvar()
@@ -146,7 +179,18 @@ public class SaveGame : MonoBehaviour
 
 
     }
+    private void Update()
+    {
+        if (TocaVideo) 
+        {
+        timeToStop -= Time.deltaTime;
+            if (timeToStop <= 0f)
+            {
 
+                SceneManager.LoadScene("Ferro Velho");
+            }
+        }
+    }
     public void NovoJogo()
     {
         string jsonS = JsonUtility.ToJson(dados); // convertendo um objeto de informações a serem salvar em json
@@ -171,9 +215,28 @@ public class SaveGame : MonoBehaviour
         player.ParadoComBota = false;
         player.ParadoComBotaEArma = false;
 
-        SceneManager.LoadScene("Ferro Velho");
+        Mutando.Mutado = true;
+        video();
 
     }
+
+    public void video() 
+    {
+        
+        timeToPlay = timeToStop - 0.1f;
+        VideoPlayer.SetActive(true);
+        TocaVideo = true;
+        
+
+
+    }
+    IEnumerator BackPlayerToLive()
+    {
+        yield return new WaitForSecondsRealtime(timeToStop);
+        fimCut = true;
+    }
+
+
 
     public string retornaStringKeys(string Key) 
     {

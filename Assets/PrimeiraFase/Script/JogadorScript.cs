@@ -66,6 +66,9 @@ public class JogadorScript : MonoBehaviour
     public int DanoInimigo = 1;
     public float tempoTomarDano = 2f;
     private Text MensagemNaTela;
+    private GameObject Salvando;
+    private bool salvo;
+    public float TempoTextSalvandoNaTela = 2f;
 
 
     [Header("Ataque")]
@@ -73,6 +76,8 @@ public class JogadorScript : MonoBehaviour
     public float raioAtaque;
     public LayerMask paraBater;
     public float tempoProximoAtaque;
+    public GameObject Tiro;
+    public GameObject CanoDaArma;
 
     [Header("Vida")]
     public int Vida = 10;
@@ -101,7 +106,8 @@ public class JogadorScript : MonoBehaviour
         AcharObjetoVida();
         paraBater = LayerMask.GetMask("paraBater");
         oChao = LayerMask.GetMask("Chao");
-
+        Salvando = GameObject.Find("SaveText");
+        Salvando.SetActive(false);
         body = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
@@ -124,12 +130,16 @@ public class JogadorScript : MonoBehaviour
 
     private void Update()
     {
-        if(Vida < 10) 
+        if (salvo) 
         {
-           // int x = 10;
-           // int dano = x - Vida;
-          //  DamageTaked(dano);
+            Salvando.SetActive(true);
+            TempoTextSalvandoNaTela -= Time.deltaTime;
+            if (TempoTextSalvandoNaTela <= 0) 
+            {
+                Salvando.SetActive(false);
+            }
         }
+
         tempoTomarDano -= Time.deltaTime;
         if (DanoInimigoBool && tempoTomarDano <= 0f) 
         {
@@ -283,6 +293,8 @@ public class JogadorScript : MonoBehaviour
                 checPoint1 = 1;
                 TemCheckPoint = true;
                 SaveGame.salvar();
+                salvo = true;
+
             }
 
             // varialvel carregar jogo  = true;
@@ -298,6 +310,7 @@ public class JogadorScript : MonoBehaviour
                 checPoint1 = 2;
                 TemCheckPoint = true;
                 SaveGame.salvar();
+                salvo = true;
             }
         }
         if (collision.CompareTag("checPoint3"))
@@ -310,6 +323,7 @@ public class JogadorScript : MonoBehaviour
                 checPoint1 = 3;
                 TemCheckPoint = true;
                 SaveGame.salvar();
+                salvo = true;
             }
         }
         if (collision.CompareTag("checPoint4"))
@@ -322,6 +336,7 @@ public class JogadorScript : MonoBehaviour
                 checPoint1 = 4;
                 TemCheckPoint = true;
                 SaveGame.salvar();
+                salvo = true;
             }
         }
         if (collision.CompareTag("checPoint5"))
@@ -334,6 +349,7 @@ public class JogadorScript : MonoBehaviour
                 checPoint1 = 5;
                 TemCheckPoint = true;
                 SaveGame.salvar();
+                salvo = true;
             }
         }
         if (collision.CompareTag("checPoint6"))
@@ -346,6 +362,7 @@ public class JogadorScript : MonoBehaviour
                 checPoint1 = 6;
                 TemCheckPoint = true;
                 SaveGame.salvar();
+                salvo = true;
             }
         }
 
@@ -381,7 +398,7 @@ public class JogadorScript : MonoBehaviour
             animator.SetBool("Hurt", false);
             animator.SetBool("Fire", false);
             audioUpgradePerna.Play();
-            puloDuplo = true;
+                puloDuplo = true;
                 Awake = false;
                 Idle = false;
                 ParadoComBota = true;
@@ -392,6 +409,19 @@ public class JogadorScript : MonoBehaviour
         if (collision.CompareTag("UpgradeTiro"))
         {
             UpgradeTiro = true;
+            paraJogadorCut = true;
+            StartCoroutine(Paradinha());
+            animator.SetBool("jump", false);
+            animator.SetBool("Velocidade2", false);
+            animator.SetBool("Hurt", false);
+            animator.SetBool("Fire", false);
+            audioUpgradePerna.Play();
+            puloDuplo = true;
+            Awake = false;
+            Idle = false;
+            ParadoComBota = false;
+            ParadoComBotaEArma = true;
+            MudarEstado();
             Destroy(collision.gameObject);
         }
         if (collision.gameObject.tag == "Missil")
@@ -512,19 +542,24 @@ public class JogadorScript : MonoBehaviour
     }
     void JogadorAtaque()
     {
-        //  if (UpgradeTiro == false) 
-        // {
-        Collider2D[] AtacarInimigo = Physics2D.OverlapCircleAll(verificaAtaque.position, raioAtaque, paraBater);
-        for (int i = 0; i < AtacarInimigo.Length; i++)
+        if (UpgradeTiro == false)
         {
-            AtacarInimigo[i].SendMessage("acertou", 1);
+            Collider2D[] AtacarInimigo = Physics2D.OverlapCircleAll(verificaAtaque.position, raioAtaque, paraBater);
+            for (int i = 0; i < AtacarInimigo.Length; i++)
+            {
+                AtacarInimigo[i].SendMessage("acertou", 1);
+            }
         }
-        //   }
-        //    else 
-        // {
-        //       Instantiate(tiro,posicaoCanoDaArma.position,Quaternion.identity);
-
-        // }
+        else if (UpgradeTiro)
+        {
+            
+            GameObject cloneTiro =  Instantiate(Tiro, CanoDaArma.transform.position, Quaternion.identity);
+            if (face == false)
+            {
+                cloneTiro.transform.eulerAngles = new Vector3 (0,0,180);;
+            }
+            
+        } 
     }
     private void OnDrawGizmosSelected()
     {

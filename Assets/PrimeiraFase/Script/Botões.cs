@@ -16,10 +16,10 @@ public class Botões : MonoBehaviour
 
     void Start()
     {
-        Mutando = GameObject.FindWithTag("MainCamera").GetComponent<Mutar>();
-        fimCut = false;
-        VideoPlayer.SetActive(false);
-        timeToPlay = timeToStop - 0.1f;
+        //Mutando = GameObject.FindWithTag("MainCamera").GetComponent<Mutar>();
+        //fimCut = false;
+        //VideoPlayer.SetActive(false);
+       // timeToPlay = timeToStop - 0.1f;
     }
 
    
