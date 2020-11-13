@@ -49,7 +49,7 @@ public class Botões : MonoBehaviour
     }
     public void Créditos()
     {
-        SceneManager.LoadScene("Créditos");
+        SceneManager.LoadScene("Creditos");
     }
 
     void SairAtalho()

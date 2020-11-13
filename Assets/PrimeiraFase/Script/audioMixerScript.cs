@@ -34,5 +34,11 @@ public class audioMixerScript : MonoBehaviour
         PlayerPrefs.SetFloat("volumeCutscene", sliderCutscene.value);
     }
 
+    public void sair() 
+    {
+        Application.Quit();
+    
+    }
+
 
 }

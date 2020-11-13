@@ -40,9 +40,26 @@ public class StartLevel : MonoBehaviour
 
 
             player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
-            if (player.TemCheckPoint)
+            if (CenaAtiva.Equals("Cidade"))
             {
-                PlayerObjeto.transform.position = player.posicaoCheckPoint;
+                if (player.checPoint1 > 2 && player.checPoint1 < 5)
+                {
+                    PlayerObjeto.transform.position = player.posicaoCheckPoint;
+                }
+
+            } else if (CenaAtiva.Equals("TerceiraFase_teste")) 
+            {
+                if (player.checPoint1 > 4 && player.checPoint1 < 7)
+                {
+                    PlayerObjeto.transform.position = player.posicaoCheckPoint;
+                }
+            }
+            else if (CenaAtiva.Equals("Ferro Velho"))
+            {
+                if (player.checPoint1 > 0 && player.checPoint1 < 3)
+                {
+                    PlayerObjeto.transform.position = player.posicaoCheckPoint;
+                }
             }
 
 
