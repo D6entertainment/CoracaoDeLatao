@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlataformaMovel : MonoBehaviour
 {
     public Transform[] m_Points;
@@ -17,6 +18,8 @@ public class PlataformaMovel : MonoBehaviour
 
     private void Start()
     {
+
+        
         Player = GameObject.FindGameObjectWithTag("Player").transform ;
     }
 

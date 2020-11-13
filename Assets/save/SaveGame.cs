@@ -347,7 +347,7 @@ public class SaveGame : MonoBehaviour
         PlayerPrefab.puloDuplo = false;
         PlayerPrefab.UpgradeTiro = false;
         PlayerPrefab.Awake = true;
-        PlayerPrefab.Idle = false;
+        PlayerPrefab.Idle = true;
         PlayerPrefab.ParadoComBota = false;
         PlayerPrefab.ParadoComBotaEArma = false;
 

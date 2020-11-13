@@ -13,11 +13,10 @@ public class Inimigo : MonoBehaviour
         vidasInimigo = vidasInimigo - valor;
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (other.gameObject.tag == "Limite")
+        if (collision.CompareTag("Limite")) 
         {
-            Velocidade = -Velocidade;
             Flip();
         }
     }
@@ -42,8 +41,9 @@ public class Inimigo : MonoBehaviour
         transform.Translate(new Vector2(Velocidade,0)* Time.deltaTime);
     }
 
-    void Flip()
+    public void Flip()
     {
         sprite.flipX = !sprite.flipX;
+        Velocidade = -Velocidade;
     }
 }

@@ -10,6 +10,7 @@ public class MissilPerceguidor : MonoBehaviour
     public GameObject Explosao;
     public float velocidadeRotacao = 3f;
     public float velocidade = 10f;
+    public float TempoMorteMissil = 5.0f;
     
     public int dano = 1;
    
@@ -22,6 +23,7 @@ public class MissilPerceguidor : MonoBehaviour
     {
         alvo = GameObject.FindGameObjectWithTag("Player");
         rb = GetComponent<Rigidbody2D>();
+        
        
     }
 
@@ -32,7 +34,12 @@ public class MissilPerceguidor : MonoBehaviour
         rotacaoAoAlvo = Quaternion.AngleAxis(angulo, Vector3.forward);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotacaoAoAlvo, Time.deltaTime * velocidadeRotacao);
         rb.velocity = new Vector2(direcao.x * velocidade , direcao.y * velocidade );
-
+        TempoMorteMissil -= Time.deltaTime;
+        if (TempoMorteMissil <= 0.0f) 
+        {
+            Destroy(transform.gameObject);
+        }
+        Destroy(transform.gameObject, TempoMorteMissil);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

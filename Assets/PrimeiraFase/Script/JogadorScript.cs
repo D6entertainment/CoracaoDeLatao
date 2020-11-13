@@ -79,6 +79,7 @@ public class JogadorScript : MonoBehaviour
     public float tempoProximoAtaque;
     public GameObject Tiro;
     public GameObject CanoDaArma;
+    
 
     [Header("Vida")]
     public int Vida = 10;
@@ -282,11 +283,14 @@ public class JogadorScript : MonoBehaviour
             {
                 if (tempoProximoAtaque <= 0)
                 {
-                    if (Input.GetKey(KeyBater) && body.velocity == new Vector2(0, 0))
+                    if (Input.GetKey(KeyBater) )
                     {
+                       // && body.velocity == new Vector2(0, 0)
                         tempoProximoAtaque = 0.2f;
+                        Debug.Log(UpgradeTiro);
                         JogadorAtaque();
                     }
+
                 }
                 else
                 {
@@ -562,7 +566,7 @@ public class JogadorScript : MonoBehaviour
 
     public void DamageTaked(int damage)
     {
-        Debug.Log(damage);
+       // Debug.Log(damage);
         for (int i = 0; i<= damage; i++) 
         {
         Vida = Vida - 1;
@@ -606,13 +610,16 @@ public class JogadorScript : MonoBehaviour
     }
     void JogadorAtaque()
     {
+        //Debug.Log("entrouAtaque");
         if (UpgradeTiro == false)
         {
             Collider2D[] AtacarInimigo = Physics2D.OverlapCircleAll(verificaAtaque.position, raioAtaque, paraBater);
+            Debug.Log("NumeroDeInimigos " + AtacarInimigo.Length);
             for (int i = 0; i < AtacarInimigo.Length; i++)
             {
                 AtacarInimigo[i].SendMessage("acertou", 1);
-                Debug.Log(i);
+                //Debug.Log(i);
+               // Debug.Log("atacando");
             }
         }
         else if (UpgradeTiro)

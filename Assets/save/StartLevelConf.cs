@@ -13,6 +13,10 @@ public class StartLevelConf : MonoBehaviour
 
 
     public Text TextAndarDireiraKey;
+    public Text TextAndarEsquerdaKey;
+    public Text TextBaterKey;
+    public Text TextPularKey;
+    public Text TextInteragirKey;
 
 
 
@@ -26,17 +30,21 @@ public class StartLevelConf : MonoBehaviour
     {
         
 
-       // mudarText();
+        mudarText();
 
     }
 
     public void mudarText() 
     {
-        save = GameObject.FindGameObjectWithTag("Save").GetComponent<SaveGame>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
         Debug.Log(save);
 
-        TextAndarDireiraKey.text = save.retornaStringKeys("KeyAndarDireita");
-    
+        TextAndarDireiraKey.text = player.KeyAndarDireita.ToString();
+        TextAndarEsquerdaKey.text = player.KeyAndarEsquerda.ToString();
+        TextBaterKey.text = player.KeyBater.ToString();
+        TextInteragirKey.text = player.KeyInteragir.ToString();
+        TextPularKey.text = player.KeyPular.ToString();
+
     }
 
     // Update is called once per frame

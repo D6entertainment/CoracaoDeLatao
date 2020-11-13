@@ -231,7 +231,8 @@ MonoBehaviour:
   Explosao: {fileID: 1236871720053466534, guid: 2c73dad446c93b14982427bfd9445efc,
     type: 3}
   velocidadeRotacao: 3
-  velocidade: 20
+  velocidade: 15
+  TempoMorteMissil: 5
   dano: 3
 --- !u!61 &-1923672193343196441
 BoxCollider2D:
