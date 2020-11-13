@@ -147,8 +147,8 @@ MonoBehaviour:
   SaveGame: {fileID: 3811558058529544202, guid: 8e454c04e2143f84c86944936478632f,
     type: 3}
   speed: 7
-  forcaPulo: 2400
-  forcaPuloDuplo: 200
+  forcaPulo: 2700
+  forcaPuloDuplo: 1300
   verificaChao: {fileID: 320624489349615748}
   oChao:
     serializedVersion: 2

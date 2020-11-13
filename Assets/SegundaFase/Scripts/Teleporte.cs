@@ -19,7 +19,7 @@ public class Teleporte : MonoBehaviour
     private void Start()
     {
         mensagemNaTela.enabled = false;
-       
+        player = GameObject.FindGameObjectWithTag("Player").transform;
 
     }
 

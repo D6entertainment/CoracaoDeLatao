@@ -44,3 +44,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 320624488983534219, guid: ce11aa1ee21d9774b8ce7e27ca19bc47, type: 3}
+  PlayerPrefab: {fileID: 320624488983534219, guid: ce11aa1ee21d9774b8ce7e27ca19bc47,
+    type: 3}
+  VideoPlayer: {fileID: 0}
+  timeToStop: 43
+  timeToPlay: 0
+  fimCut: 0
+  NovoJogoBool: 0
+  Mutando: {fileID: 0}

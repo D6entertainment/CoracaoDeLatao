@@ -11,7 +11,7 @@ public class JogadorScript : MonoBehaviour
 
     [Header("Save")]
     //public SaveGameJson save;
-    public int fase = 1;
+    public int fase;
     public Vector3 posicaoCheckPoint;
     //public GameObject posicaoInicioFase;
     public int checPoint1 = 0;
@@ -23,7 +23,7 @@ public class JogadorScript : MonoBehaviour
     
 
     public float speed = 10f;
-    public float forcaPulo = 2400f;
+    public float forcaPulo = 2700f;
     public float forcaPuloDuplo = 1300f;
     public Transform verificaChao;
     public LayerMask oChao;
@@ -100,7 +100,7 @@ public class JogadorScript : MonoBehaviour
 
     [Header("Vídeo")]
     public GameObject VideoPlayerOBJFinalFase1;
-    public float timeToStop = 34f;
+    public float timeToStop = 34.0f;
     public float timeToPlay;
     public bool fimCut;
     public Mutar Mutando;
@@ -122,7 +122,7 @@ public class JogadorScript : MonoBehaviour
         animator.SetBool("Awake", Awake);
         paraJogadorCut = true;
         StartCoroutine(Paradinha());
-        Idle = true;
+        
         animator.SetBool("Idle", Idle);
         animator.SetBool("ParadoComBota", ParadoComBota);
         animator.SetBool("ParadoComBotaEArma", ParadoComBotaEArma);
@@ -140,6 +140,13 @@ public class JogadorScript : MonoBehaviour
         
         VideoPlayerOBJFinalFase1.SetActive(false);
 
+        if (Vida < 10) 
+        {
+            int x = 10 - Vida;
+            Vida = 10;
+            DamageTaked(x);
+           
+        }
 
     }
 
@@ -152,7 +159,7 @@ public class JogadorScript : MonoBehaviour
             if (timeToStop <= 0f)
             {
 
-                SceneManager.LoadScene("Cidade");
+                SaveGame.carrregar();
             }
         }
 

@@ -14,6 +14,7 @@ public class SaveGame : MonoBehaviour
     private string dataP;
     public infos dados;
     public JogadorScript player;
+    public JogadorScript PlayerPrefab;
 
 
     [Header("Vídeo")]
@@ -60,7 +61,7 @@ public class SaveGame : MonoBehaviour
             string nomeCenaAtiva = SceneManager.GetActiveScene().name;
             if (nomeCenaAtiva.Equals("Ferro Velho") || nomeCenaAtiva.Equals("Cidade") || nomeCenaAtiva.Equals("TerceiraFase_teste"))
             {
-                player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
+                //player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
             }
         }
     }
@@ -92,7 +93,38 @@ public class SaveGame : MonoBehaviour
         string jsonS = JsonUtility.ToJson(dados); // convertendo um objeto de informações a serem salvar em json
         File.WriteAllText(dataP, jsonS);//escrevendo no arquivo json com os dados do objeto em json no diretorio datap.
         Debug.Log("salvado");
+
+        CarregarParaPrefabPleyer();
+
     }
+
+    public void CarregarParaPrefabPleyer() 
+    {
+        PlayerPrefab.Vida = dados.Vida;
+        PlayerPrefab.posicaoCheckPoint = dados.posicaoCheckPoint;
+        PlayerPrefab.checPoint1 = dados.checPoint1;
+        PlayerPrefab.TemCheckPoint = dados.TemCheckPoint;
+        PlayerPrefab.fase = dados.fase;
+        PlayerPrefab.speed = dados.speed;
+        PlayerPrefab.forcaPulo = dados.forcaPulo;
+        PlayerPrefab.forcaPuloDuplo = dados.forcaPuloDuplo;
+        PlayerPrefab.KeyAndarDireita = dados.KeyAndarDireita;
+        PlayerPrefab.KeyAndarEsquerda = dados.KeyAndarEsquerda;
+        PlayerPrefab.KeyBater = dados.KeyBater;
+        PlayerPrefab.KeyInteragir = dados.KeyInteragir;
+        PlayerPrefab.KeyPular = dados.KeyPular;
+        PlayerPrefab.puloDuplo = dados.puloDuplo;
+        PlayerPrefab.UpgradeTiro = dados.UpgradeTiro;
+        PlayerPrefab.Awake = dados.Awake;
+        PlayerPrefab.Idle = dados.Idle;
+        PlayerPrefab.ParadoComBota = dados.ParadoComBota;
+        PlayerPrefab.ParadoComBotaEArma = dados.ParadoComBotaEArma;
+
+
+
+    }
+
+
 
     public void carrregar()
     {
@@ -105,25 +137,25 @@ public class SaveGame : MonoBehaviour
 
 
 
-            player.Vida = dados.Vida;
-            player.posicaoCheckPoint = dados.posicaoCheckPoint;
-            player.checPoint1 = dados.checPoint1;
-            player.TemCheckPoint = dados.TemCheckPoint;
-            player.fase = dados.fase;
-            player.speed = dados.speed;
-            player.forcaPulo = dados.forcaPulo;
-            player.forcaPuloDuplo = dados.forcaPuloDuplo;
-            player.KeyAndarDireita = dados.KeyAndarDireita;
-            player.KeyAndarEsquerda = dados.KeyAndarEsquerda;
-            player.KeyBater = dados.KeyBater;
-            player.KeyInteragir = dados.KeyInteragir;
-            player.KeyPular = dados.KeyPular;
-            player.puloDuplo = dados.puloDuplo;
-            player.UpgradeTiro = dados.UpgradeTiro;
-            player.Awake = dados.Awake;
-            player.Idle = dados.Idle;
-            player.ParadoComBota = dados.ParadoComBota;
-            player.ParadoComBotaEArma = dados.ParadoComBotaEArma;
+            PlayerPrefab.Vida = dados.Vida;
+            PlayerPrefab.posicaoCheckPoint = dados.posicaoCheckPoint;
+            PlayerPrefab.checPoint1 = dados.checPoint1;
+            PlayerPrefab.TemCheckPoint = dados.TemCheckPoint;
+            PlayerPrefab.fase = dados.fase;
+            PlayerPrefab.speed = dados.speed;
+            PlayerPrefab.forcaPulo = dados.forcaPulo;
+            PlayerPrefab.forcaPuloDuplo = dados.forcaPuloDuplo;
+            PlayerPrefab.KeyAndarDireita = dados.KeyAndarDireita;
+            PlayerPrefab.KeyAndarEsquerda = dados.KeyAndarEsquerda;
+            PlayerPrefab.KeyBater = dados.KeyBater;
+            PlayerPrefab.KeyInteragir = dados.KeyInteragir;
+            PlayerPrefab.KeyPular = dados.KeyPular;
+            PlayerPrefab.puloDuplo = dados.puloDuplo;
+            PlayerPrefab.UpgradeTiro = dados.UpgradeTiro;
+            PlayerPrefab.Awake = dados.Awake;
+            PlayerPrefab.Idle = dados.Idle;
+            PlayerPrefab.ParadoComBota = dados.ParadoComBota;
+            PlayerPrefab.ParadoComBotaEArma = dados.ParadoComBotaEArma;
 
         }
         if (dados.fase == 2)
@@ -132,25 +164,25 @@ public class SaveGame : MonoBehaviour
 
 
 
-            player.Vida = dados.Vida;
-            player.posicaoCheckPoint = dados.posicaoCheckPoint;
-            player.checPoint1 = dados.checPoint1;
-            player.TemCheckPoint = dados.TemCheckPoint;
-            player.fase = dados.fase;
-            player.speed = dados.speed;
-            player.forcaPulo = dados.forcaPulo;
-            player.forcaPuloDuplo = dados.forcaPuloDuplo;
-            player.KeyAndarDireita = dados.KeyAndarDireita;
-            player.KeyAndarEsquerda = dados.KeyAndarEsquerda;
-            player.KeyBater = dados.KeyBater;
-            player.KeyInteragir = dados.KeyInteragir;
-            player.KeyPular = dados.KeyPular;
-            player.puloDuplo = dados.puloDuplo;
-            player.UpgradeTiro = dados.UpgradeTiro;
-            player.Awake = dados.Awake;
-            player.Idle = dados.Idle;
-            player.ParadoComBota = dados.ParadoComBota;
-            player.ParadoComBotaEArma = dados.ParadoComBotaEArma;
+            PlayerPrefab.Vida = dados.Vida;
+            PlayerPrefab.posicaoCheckPoint = dados.posicaoCheckPoint;
+            PlayerPrefab.checPoint1 = dados.checPoint1;
+            PlayerPrefab.TemCheckPoint = dados.TemCheckPoint;
+            PlayerPrefab.fase = dados.fase;
+            PlayerPrefab.speed = dados.speed;
+            PlayerPrefab.forcaPulo = dados.forcaPulo;
+            PlayerPrefab.forcaPuloDuplo = dados.forcaPuloDuplo;
+            PlayerPrefab.KeyAndarDireita = dados.KeyAndarDireita;
+            PlayerPrefab.KeyAndarEsquerda = dados.KeyAndarEsquerda;
+            PlayerPrefab.KeyBater = dados.KeyBater;
+            PlayerPrefab.KeyInteragir = dados.KeyInteragir;
+            PlayerPrefab.KeyPular = dados.KeyPular;
+            PlayerPrefab.puloDuplo = dados.puloDuplo;
+            PlayerPrefab.UpgradeTiro = dados.UpgradeTiro;
+            PlayerPrefab.Awake = dados.Awake;
+            PlayerPrefab.Idle = dados.Idle;
+            PlayerPrefab.ParadoComBota = dados.ParadoComBota;
+            PlayerPrefab.ParadoComBotaEArma = dados.ParadoComBotaEArma;
 
         }
         if (dados.fase == 3)
@@ -159,25 +191,25 @@ public class SaveGame : MonoBehaviour
 
 
 
-            player.Vida = dados.Vida;
-            player.posicaoCheckPoint = dados.posicaoCheckPoint;
-            player.checPoint1 = dados.checPoint1;
-            player.TemCheckPoint = dados.TemCheckPoint;
-            player.fase = dados.fase;
-            player.speed = dados.speed;
-            player.forcaPulo = dados.forcaPulo;
-            player.forcaPuloDuplo = dados.forcaPuloDuplo;
-            player.KeyAndarDireita = dados.KeyAndarDireita;
-            player.KeyAndarEsquerda = dados.KeyAndarEsquerda;
-            player.KeyBater = dados.KeyBater;
-            player.KeyInteragir = dados.KeyInteragir;
-            player.KeyPular = dados.KeyPular;
-            player.puloDuplo = dados.puloDuplo;
-            player.UpgradeTiro = dados.UpgradeTiro;
-            player.Awake = dados.Awake;
-            player.Idle = dados.Idle;
-            player.ParadoComBota = dados.ParadoComBota;
-            player.ParadoComBotaEArma = dados.ParadoComBotaEArma;
+            PlayerPrefab.Vida = dados.Vida;
+            PlayerPrefab.posicaoCheckPoint = dados.posicaoCheckPoint;
+            PlayerPrefab.checPoint1 = dados.checPoint1;
+            PlayerPrefab.TemCheckPoint = dados.TemCheckPoint;
+            PlayerPrefab.fase = dados.fase;
+            PlayerPrefab.speed = dados.speed;
+            PlayerPrefab.forcaPulo = dados.forcaPulo;
+            PlayerPrefab.forcaPuloDuplo = dados.forcaPuloDuplo;
+            PlayerPrefab.KeyAndarDireita = dados.KeyAndarDireita;
+            PlayerPrefab.KeyAndarEsquerda = dados.KeyAndarEsquerda;
+            PlayerPrefab.KeyBater = dados.KeyBater;
+            PlayerPrefab.KeyInteragir = dados.KeyInteragir;
+            PlayerPrefab.KeyPular = dados.KeyPular;
+            PlayerPrefab.puloDuplo = dados.puloDuplo;
+            PlayerPrefab.UpgradeTiro = dados.UpgradeTiro;
+            PlayerPrefab.Awake = dados.Awake;
+            PlayerPrefab.Idle = dados.Idle;
+            PlayerPrefab.ParadoComBota = dados.ParadoComBota;
+            PlayerPrefab.ParadoComBotaEArma = dados.ParadoComBotaEArma;
 
         }
 
@@ -185,6 +217,103 @@ public class SaveGame : MonoBehaviour
 
 
     }
+
+
+    public void VoltarAOJogo()
+    {
+
+        string jsonS = File.ReadAllText(dataP);
+        JsonUtility.FromJsonOverwrite(jsonS, dados);
+        if (dados.fase == 1)
+        {
+            SceneManager.LoadScene("Ferro Velho");
+
+
+
+            PlayerPrefab.Vida = 10;
+            PlayerPrefab.posicaoCheckPoint = dados.posicaoCheckPoint;
+            PlayerPrefab.checPoint1 = dados.checPoint1;
+            PlayerPrefab.TemCheckPoint = dados.TemCheckPoint;
+            PlayerPrefab.fase = dados.fase;
+            PlayerPrefab.speed = dados.speed;
+            PlayerPrefab.forcaPulo = dados.forcaPulo;
+            PlayerPrefab.forcaPuloDuplo = dados.forcaPuloDuplo;
+            PlayerPrefab.KeyAndarDireita = dados.KeyAndarDireita;
+            PlayerPrefab.KeyAndarEsquerda = dados.KeyAndarEsquerda;
+            PlayerPrefab.KeyBater = dados.KeyBater;
+            PlayerPrefab.KeyInteragir = dados.KeyInteragir;
+            PlayerPrefab.KeyPular = dados.KeyPular;
+            PlayerPrefab.puloDuplo = dados.puloDuplo;
+            PlayerPrefab.UpgradeTiro = dados.UpgradeTiro;
+            PlayerPrefab.Awake = dados.Awake;
+            PlayerPrefab.Idle = dados.Idle;
+            PlayerPrefab.ParadoComBota = dados.ParadoComBota;
+            PlayerPrefab.ParadoComBotaEArma = dados.ParadoComBotaEArma;
+
+        }
+        if (dados.fase == 2)
+        {
+            SceneManager.LoadScene("Cidade");
+
+
+            PlayerPrefab.Vida = 10;
+            PlayerPrefab.posicaoCheckPoint = dados.posicaoCheckPoint;
+            PlayerPrefab.checPoint1 = dados.checPoint1;
+            PlayerPrefab.TemCheckPoint = dados.TemCheckPoint;
+            PlayerPrefab.fase = dados.fase;
+            PlayerPrefab.speed = dados.speed;
+            PlayerPrefab.forcaPulo = dados.forcaPulo;
+            PlayerPrefab.forcaPuloDuplo = dados.forcaPuloDuplo;
+            PlayerPrefab.KeyAndarDireita = dados.KeyAndarDireita;
+            PlayerPrefab.KeyAndarEsquerda = dados.KeyAndarEsquerda;
+            PlayerPrefab.KeyBater = dados.KeyBater;
+            PlayerPrefab.KeyInteragir = dados.KeyInteragir;
+            PlayerPrefab.KeyPular = dados.KeyPular;
+            PlayerPrefab.puloDuplo = dados.puloDuplo;
+            PlayerPrefab.UpgradeTiro = dados.UpgradeTiro;
+            PlayerPrefab.Awake = dados.Awake;
+            PlayerPrefab.Idle = dados.Idle;
+            PlayerPrefab.ParadoComBota = dados.ParadoComBota;
+            PlayerPrefab.ParadoComBotaEArma = dados.ParadoComBotaEArma;
+
+        }
+        if (dados.fase == 3)
+        {
+            SceneManager.LoadScene("TerceiraFase_teste");
+
+
+
+            PlayerPrefab.Vida = 10;
+            PlayerPrefab.posicaoCheckPoint = dados.posicaoCheckPoint;
+            PlayerPrefab.checPoint1 = dados.checPoint1;
+            PlayerPrefab.TemCheckPoint = dados.TemCheckPoint;
+            PlayerPrefab.fase = dados.fase;
+            PlayerPrefab.speed = dados.speed;
+            PlayerPrefab.forcaPulo = dados.forcaPulo;
+            PlayerPrefab.forcaPuloDuplo = dados.forcaPuloDuplo;
+            PlayerPrefab.KeyAndarDireita = dados.KeyAndarDireita;
+            PlayerPrefab.KeyAndarEsquerda = dados.KeyAndarEsquerda;
+            PlayerPrefab.KeyBater = dados.KeyBater;
+            PlayerPrefab.KeyInteragir = dados.KeyInteragir;
+            PlayerPrefab.KeyPular = dados.KeyPular;
+            PlayerPrefab.puloDuplo = dados.puloDuplo;
+            PlayerPrefab.UpgradeTiro = dados.UpgradeTiro;
+            PlayerPrefab.Awake = dados.Awake;
+            PlayerPrefab.Idle = dados.Idle;
+            PlayerPrefab.ParadoComBota = dados.ParadoComBota;
+            PlayerPrefab.ParadoComBotaEArma = dados.ParadoComBotaEArma;
+
+        }
+
+
+
+
+    }
+
+
+
+
+
     private void Update()
     {
         if (TocaVideo)
@@ -202,25 +331,25 @@ public class SaveGame : MonoBehaviour
     {
         string jsonS = JsonUtility.ToJson(dados); // convertendo um objeto de informações a serem salvar em json
         File.WriteAllText(dataP, jsonS);//escrevendo no arquivo json com os dados do objeto em json no diretorio datap.
-        player.Vida = 10;
-        player.posicaoCheckPoint = dados.posicaoCheckPoint;
-        player.checPoint1 = 0;
-        player.TemCheckPoint = false;
-        player.fase = 1;
-        player.speed = 10f;
-        player.forcaPulo = 2400f;
-        player.forcaPuloDuplo = 1300f;
-        player.KeyAndarDireita = KeyCode.D; ;
-        player.KeyAndarEsquerda = KeyCode.A;
-        player.KeyBater = KeyCode.O;
-        player.KeyInteragir = KeyCode.E;
-        player.KeyPular = KeyCode.Space;
-        player.puloDuplo = false;
-        player.UpgradeTiro = false;
-        player.Awake = true;
-        player.Idle = false;
-        player.ParadoComBota = false;
-        player.ParadoComBotaEArma = false;
+        PlayerPrefab.Vida = 10;
+        PlayerPrefab.posicaoCheckPoint = dados.posicaoCheckPoint;
+        PlayerPrefab.checPoint1 = 0;
+        PlayerPrefab.TemCheckPoint = false;
+        PlayerPrefab.fase = 1;
+        PlayerPrefab.speed = 10f;
+        PlayerPrefab.forcaPulo = 2400f;
+        PlayerPrefab.forcaPuloDuplo = 1300f;
+        PlayerPrefab.KeyAndarDireita = KeyCode.D; ;
+        PlayerPrefab.KeyAndarEsquerda = KeyCode.A;
+        PlayerPrefab.KeyBater = KeyCode.O;
+        PlayerPrefab.KeyInteragir = KeyCode.E;
+        PlayerPrefab.KeyPular = KeyCode.Space;
+        PlayerPrefab.puloDuplo = false;
+        PlayerPrefab.UpgradeTiro = false;
+        PlayerPrefab.Awake = true;
+        PlayerPrefab.Idle = false;
+        PlayerPrefab.ParadoComBota = false;
+        PlayerPrefab.ParadoComBotaEArma = false;
 
         Mutando.Mutado = true;
         video();
