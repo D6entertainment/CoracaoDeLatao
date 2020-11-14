@@ -425,6 +425,32 @@ public class JogadorScript : MonoBehaviour
                 salvo = true;
             }
         }
+        if (collision.CompareTag("checPoint7"))
+        {
+
+            if (checPoint1 != 7)
+            {
+
+                posicaoCheckPoint = collision.transform.position;
+                checPoint1 = 7;
+                TemCheckPoint = true;
+                SaveGame.salvar();
+                salvo = true;
+            }
+        }
+        if (collision.CompareTag("checPoint8"))
+        {
+
+            if (checPoint1 != 8)
+            {
+
+                posicaoCheckPoint = collision.transform.position;
+                checPoint1 = 8;
+                TemCheckPoint = true;
+                SaveGame.salvar();
+                salvo = true;
+            }
+        }
 
 
 

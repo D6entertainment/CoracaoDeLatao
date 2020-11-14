@@ -49,14 +49,14 @@ public class StartLevel : MonoBehaviour
 
             } else if (CenaAtiva.Equals("TerceiraFase_teste")) 
             {
-                if (player.checPoint1 > 4 && player.checPoint1 < 7)
+                if (player.checPoint1 > 4 && player.checPoint1 < 8)
                 {
                     PlayerObjeto.transform.position = player.posicaoCheckPoint;
                 }
             }
             else if (CenaAtiva.Equals("Ferro Velho"))
             {
-                if (player.checPoint1 > 0 && player.checPoint1 < 3)
+                if (player.checPoint1 > 0 && player.checPoint1 < 3 || player.checPoint1 == 8)
                 {
                     PlayerObjeto.transform.position = player.posicaoCheckPoint;
                 }
