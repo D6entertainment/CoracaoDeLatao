@@ -146,7 +146,7 @@ MonoBehaviour:
   TemCheckPoint: 0
   SaveGame: {fileID: 3811558058529544202, guid: 8e454c04e2143f84c86944936478632f,
     type: 3}
-  speed: 7
+  speed: 10
   forcaPulo: 2700
   forcaPuloDuplo: 1300
   verificaChao: {fileID: 320624489349615748}

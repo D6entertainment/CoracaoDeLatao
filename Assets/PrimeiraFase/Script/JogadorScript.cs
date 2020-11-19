@@ -156,6 +156,7 @@ public class JogadorScript : MonoBehaviour
     {
         if (TocaVideo)
         {
+
             timeToStop -= Time.deltaTime;
             if (timeToStop <= 0f)
             {
@@ -205,41 +206,65 @@ public class JogadorScript : MonoBehaviour
 
         
 
+
+    }
+    private void FixedUpdate()
+    {
+        estaChao = Physics2D.OverlapCircle(verificaChao.position, raio, oChao);
+
         if (!paraJogadorCut)
         {
             if (paraJogadorIma == 0)
             {
                 if (Input.GetKeyDown(KeyPular) && estaChao && puloDuplo == false)
                 {
-                    
-                    
-                      
+
+
+
                     body.AddForce(new Vector2(0f, forcaPulo));
-                    animator.SetBool("jump",true);
-                    
-      
+                    animator.SetBool("jump", true);
+
+
                 }
-                if(Input.GetKeyDown(KeyPular) && estaChao && puloDuplo) 
+                if (Input.GetKeyDown(KeyPular) && estaChao && puloDuplo)
                 {
-                 
+
                     body.AddForce(new Vector2(0f, forcaPulo + forcaPuloDuplo));
-                    
+
                 }
-    
 
 
-                if (Input.GetKey(KeyAndarDireita) && ficaParado == false)
+
+                if (Input.GetKey(KeyAndarDireita) && ficaParado == false && estaChao)
                 {
                     transform.Translate(new Vector2(speed, 0) * Time.deltaTime);
                     animator.SetBool("Velocidade2", true);
                 }
-                else if (Input.GetKey(KeyAndarEsquerda))
+                 if (Input.GetKey(KeyAndarDireita) && ficaParado == false && !estaChao)
+                {
+                    transform.Translate(new Vector2(speed, 0) * Time.deltaTime);
+                    
+                }
+
+
+                else if (Input.GetKey(KeyAndarEsquerda ) && estaChao)
                 {
                     transform.Translate(new Vector2(-speed, 0) * Time.deltaTime);
 
                     animator.SetBool("Velocidade2", true);
 
                 }
+                 if (Input.GetKey(KeyAndarEsquerda) && !estaChao)
+                {
+                    transform.Translate(new Vector2(-speed, 0) * Time.deltaTime);
+
+                    
+
+                }
+
+
+
+
                 else if (!Input.GetKey(KeyAndarDireita) && !Input.GetKey(KeyAndarEsquerda))
                 {
                     animator.SetBool("Velocidade2", false);
@@ -260,9 +285,19 @@ public class JogadorScript : MonoBehaviour
 
             }
         }
-    }
-    private void FixedUpdate()
-    {
+
+
+
+
+
+
+
+
+
+
+
+
+
         if (imaAtivado == true)
         {
             gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
@@ -271,7 +306,6 @@ public class JogadorScript : MonoBehaviour
         {
             gameObject.GetComponent<Rigidbody2D>().gravityScale = 2;
         }
-        estaChao = Physics2D.OverlapCircle(verificaChao.position, raio, oChao);
         if (estaChao)
         {
             paraJogadorIma = 0;
@@ -303,13 +337,32 @@ public class JogadorScript : MonoBehaviour
                 if (!estaChao) 
                 {
                 
+                    animator.SetBool("Jump", true);
                 }
-                   // animator.SetBool("Jump", false);
+
+                if (estaChao)
+                {
+
+                    animator.SetBool("Jump", false);
+                }
+
+
             }
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag("Vida")) 
+        {
+            if(Vida + 1 <= 10) 
+            {
+                DaVida(1);
+                Destroy(collision.gameObject);
+            }
+        }
+
+
+
         if(collision.CompareTag("Awak")) 
         {
             Awake = false;
@@ -521,6 +574,7 @@ public class JogadorScript : MonoBehaviour
 
         timeToPlay = timeToStop - 0.1f;
         VideoPlayerOBJFinalFase1.SetActive(true);
+        timeToStop = 35.0f;
         TocaVideo = true;
 
     }
@@ -592,7 +646,8 @@ public class JogadorScript : MonoBehaviour
 
     public void DamageTaked(int damage)
     {
-       // Debug.Log(damage);
+        Debug.Log(damage);
+        Debug.Log("tamanho do array de vida = " + lifeObject.Length);
         for (int i = 0; i<= damage; i++) 
         {
         Vida = Vida - 1;
@@ -606,8 +661,29 @@ public class JogadorScript : MonoBehaviour
             {
                 SceneManager.LoadScene("GameOver");
             }
+
         }
+        Debug.Log("tamanho do array de vida depois do dano = " + lifeObject.Length);
     }
+
+    public void DaVida(int MaisVida) 
+    {
+            if (Vida < 10) 
+            {
+       
+        for (int i = 1; i <= MaisVida; i++) 
+        {
+                Debug.Log(Vida);
+            lifeObject[Vida].SetActive(true);
+            Vida += 1;
+                
+
+        }
+            
+            }
+    
+    } 
+
     public void MudarEstado() 
     {
         animator.SetBool("Awake", Awake);
