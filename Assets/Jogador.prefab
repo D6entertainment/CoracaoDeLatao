@@ -141,9 +141,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fase: 1
-  posicaoCheckPoint: {x: 0, y: 0, z: 0}
-  checPoint1: 0
-  TemCheckPoint: 0
+  posicaoCheckPoint: {x: -2, y: 1.9, z: -3.9570312}
+  checPoint1: 8
+  TemCheckPoint: 1
   SaveGame: {fileID: 3811558058529544202, guid: 8e454c04e2143f84c86944936478632f,
     type: 3}
   speed: 10

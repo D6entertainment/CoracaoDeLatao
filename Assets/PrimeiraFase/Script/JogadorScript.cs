@@ -180,9 +180,9 @@ public class JogadorScript : MonoBehaviour
         tempoTomarDano -= Time.deltaTime;
         if (DanoInimigoBool && tempoTomarDano <= 0f) 
         {
+            tempoTomarDano = 3f;
             DamageTaked(DanoInimigo);
             animator.SetBool("Hurt", true);
-            tempoTomarDano = 3f;
         }
         else
         {
@@ -216,7 +216,7 @@ public class JogadorScript : MonoBehaviour
         {
             if (paraJogadorIma == 0)
             {
-                if (Input.GetKeyDown(KeyPular) && estaChao && puloDuplo == false)
+                if (Input.GetKey(KeyPular) && estaChao && puloDuplo == false)
                 {
 
 
@@ -226,7 +226,7 @@ public class JogadorScript : MonoBehaviour
 
 
                 }
-                if (Input.GetKeyDown(KeyPular) && estaChao && puloDuplo)
+                if (Input.GetKey(KeyPular) && estaChao && puloDuplo)
                 {
 
                     body.AddForce(new Vector2(0f, forcaPulo + forcaPuloDuplo));
