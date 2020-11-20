@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PulandoComBotas
+  m_Name: voando
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,11 +20,9 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: d28417829d4953b478321e3ec852b503, type: 3}
-    - time: 0.11666667
-      value: {fileID: 21300000, guid: a8022f811e140ed40b5b182d253ff8c8, type: 3}
-    - time: 0.23333333
-      value: {fileID: 21300000, guid: a8eb558cce5e389499868b2b4b3f30fa, type: 3}
+      value: {fileID: 21300000, guid: 31a71ca1849439643853cfe1a0b0d64c, type: 3}
+    - time: 0.25
+      value: {fileID: 21300000, guid: 31a71ca1849439643853cfe1a0b0d64c, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -44,15 +42,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: d28417829d4953b478321e3ec852b503, type: 3}
-    - {fileID: 21300000, guid: a8022f811e140ed40b5b182d253ff8c8, type: 3}
-    - {fileID: 21300000, guid: a8eb558cce5e389499868b2b4b3f30fa, type: 3}
+    - {fileID: 21300000, guid: 31a71ca1849439643853cfe1a0b0d64c, type: 3}
+    - {fileID: 21300000, guid: 31a71ca1849439643853cfe1a0b0d64c, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.25
+    m_StopTime: 0.26666668
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
