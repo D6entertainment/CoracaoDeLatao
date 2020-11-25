@@ -8,9 +8,6 @@ using UnityEngine.UI;
 public class SaveGame : MonoBehaviour
 {
 
-
-
-
     private string dataP;
     public infos dados;
     public JogadorScript player;
