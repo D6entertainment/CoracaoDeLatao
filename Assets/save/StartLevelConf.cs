@@ -37,7 +37,7 @@ public class StartLevelConf : MonoBehaviour
     public void mudarText() 
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
-        Debug.Log(save);
+       // Debug.Log(save);
 
         TextAndarDireiraKey.text = player.KeyAndarDireita.ToString();
         TextAndarEsquerdaKey.text = player.KeyAndarEsquerda.ToString();

@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TerceiraFase_teste.unity
     guid: 63bf629f85ffc8749b0f217138931fd9
+  - enabled: 1
+    path: Assets/Scenes/Tutorial.unity
+    guid: c7bad7c4d02de6d4cbbc6efad481e18b
   m_configObjects: {}

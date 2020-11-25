@@ -19,7 +19,12 @@ public class Tiro : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(transform.gameObject);
+        if (collision.gameObject.layer.Equals("Limite de Camera")) 
+            return;
+        
+        Destroy(gameObject);
+        
+       
         
     }
     private void OnTriggerEnter2D(Collider2D collision)
@@ -29,6 +34,7 @@ public class Tiro : MonoBehaviour
             inimigo.acertou(DanoTiro);
             Destroy(transform.gameObject);
         }
+
     }
 
 

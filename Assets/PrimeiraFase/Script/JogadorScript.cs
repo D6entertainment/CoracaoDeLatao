@@ -67,18 +67,23 @@ public class JogadorScript : MonoBehaviour
     public int DanoInimigo = 1;
     public float tempoTomarDano = 2f;
     private Text MensagemNaTela;
-    private GameObject Salvando;
+    public GameObject Salvando;
     private bool salvo;
     public float TempoTextSalvandoNaTela = 2f;
+    
+    public Turotial Tutorial;
+    public string cenaAtiva;
 
 
     [Header("Ataque")]
     public Transform verificaAtaque;
-    public float raioAtaque;
+    public float raioAtaque = 2.3f;
     public LayerMask paraBater;
     public float tempoProximoAtaque;
     public GameObject Tiro;
     public GameObject CanoDaArma;
+    public AudioSource AudioBater;
+    public AudioSource AudioAtirar;
     
 
     [Header("Vida")]
@@ -121,13 +126,19 @@ public class JogadorScript : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         animator.SetBool("Awake", Awake);
-        paraJogadorCut = true;
-        StartCoroutine(Paradinha());
-        
         animator.SetBool("Idle", Idle);
         animator.SetBool("ParadoComBota", ParadoComBota);
         animator.SetBool("ParadoComBotaEArma", ParadoComBotaEArma);
 
+        if(Awake) 
+        {
+        paraJogadorCut = true;
+        StartCoroutine(Paradinha());
+            //chamar Painel de Tutorial
+
+        
+        }
+        
         roboTransform = GetComponent<Transform>();
         face = true;
         ficaParado = false;
@@ -138,6 +149,8 @@ public class JogadorScript : MonoBehaviour
         Mutando = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Mutar>();
         videoPlayer = VideoPlayerOBJFinalFase1.GetComponent<VideoPlayer>();
         videoPlayer.targetCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        cenaAtiva = SceneManager.GetActiveScene().name;
+
         
         VideoPlayerOBJFinalFase1.SetActive(false);
 
@@ -154,6 +167,11 @@ public class JogadorScript : MonoBehaviour
 
     private void Update()
     {
+
+
+
+
+
         if (TocaVideo)
         {
 
@@ -204,29 +222,29 @@ public class JogadorScript : MonoBehaviour
         
         }
 
-        
 
-
-    }
-    private void FixedUpdate()
-    {
         estaChao = Physics2D.OverlapCircle(verificaChao.position, raio, oChao);
+
+
+
+
 
         if (!paraJogadorCut)
         {
             if (paraJogadorIma == 0)
             {
-                if (Input.GetKey(KeyPular) && estaChao && puloDuplo == false)
+                if (Input.GetKeyDown(KeyPular) && estaChao && puloDuplo == false)
                 {
 
 
 
                     body.AddForce(new Vector2(0f, forcaPulo));
                     animator.SetBool("jump", true);
+                    Debug.Log(forcaPulo);
 
 
                 }
-                if (Input.GetKey(KeyPular) && estaChao && puloDuplo)
+                if (Input.GetKeyDown(KeyPular) && estaChao && puloDuplo)
                 {
 
                     body.AddForce(new Vector2(0f, forcaPulo + forcaPuloDuplo));
@@ -237,28 +255,28 @@ public class JogadorScript : MonoBehaviour
 
                 if (Input.GetKey(KeyAndarDireita) && ficaParado == false && estaChao)
                 {
-                    transform.Translate(new Vector2(speed, 0) * Time.deltaTime);
                     animator.SetBool("Velocidade2", true);
+                    transform.Translate(new Vector2(speed, 0) * Time.deltaTime);
                 }
-                 if (Input.GetKey(KeyAndarDireita) && ficaParado == false && !estaChao)
+                if (Input.GetKey(KeyAndarDireita) && ficaParado == false && !estaChao)
                 {
                     transform.Translate(new Vector2(speed, 0) * Time.deltaTime);
-                    
+
                 }
 
 
-                else if (Input.GetKey(KeyAndarEsquerda ) && estaChao)
+                else if (Input.GetKey(KeyAndarEsquerda) && estaChao)
+                {
+
+                    animator.SetBool("Velocidade2", true);
+                    transform.Translate(new Vector2(-speed, 0) * Time.deltaTime);
+
+                }
+                if (Input.GetKey(KeyAndarEsquerda) && !estaChao)
                 {
                     transform.Translate(new Vector2(-speed, 0) * Time.deltaTime);
 
-                    animator.SetBool("Velocidade2", true);
 
-                }
-                 if (Input.GetKey(KeyAndarEsquerda) && !estaChao)
-                {
-                    transform.Translate(new Vector2(-speed, 0) * Time.deltaTime);
-
-                    
 
                 }
 
@@ -269,10 +287,25 @@ public class JogadorScript : MonoBehaviour
                 {
                     animator.SetBool("Velocidade2", false);
                 }
-                if (Input.GetKeyDown(KeyBater))
+                //if (Input.GetKeyDown(KeyBater))
+                //{
+                //   Fire = true;
+                //   animator.SetBool("Fire", true);
+                // }
+                //else
+                //{
+                //    Fire = false;
+                //    animator.SetBool("Fire", false);
+                // }
+
+                tempoProximoAtaque -= Time.deltaTime;
+                if (Input.GetKey(KeyBater) && tempoProximoAtaque <= 0)
                 {
+                    // && body.velocity == new Vector2(0, 0)
+                    tempoProximoAtaque = 0.2f;
                     Fire = true;
                     animator.SetBool("Fire", true);
+
                 }
                 else
                 {
@@ -283,8 +316,19 @@ public class JogadorScript : MonoBehaviour
 
 
 
+
+
             }
         }
+
+
+
+
+
+
+    }
+    private void FixedUpdate()
+    {
 
 
 
@@ -315,21 +359,8 @@ public class JogadorScript : MonoBehaviour
         {
             if (paraJogadorIma == 0)
             {
-                if (tempoProximoAtaque <= 0)
-                {
-                    if (Input.GetKey(KeyBater) )
-                    {
-                       // && body.velocity == new Vector2(0, 0)
-                        tempoProximoAtaque = 0.2f;
-                        Debug.Log(UpgradeTiro);
-                        JogadorAtaque();
-                    }
+                
 
-                }
-                else
-                {
-                    tempoProximoAtaque -= Time.deltaTime;
-                }
                 if (Vida <= 0)
                 {
                     SceneManager.LoadScene("GameOver");
@@ -531,7 +562,7 @@ public class JogadorScript : MonoBehaviour
         if (collision.CompareTag("UpgradePerna"))
         {
             paraJogadorCut = true;
-            StartCoroutine(Paradinha());
+            StartCoroutine(ParadaUpgrade());
             animator.SetBool("jump",false);
             animator.SetBool("Velocidade2", false);
             animator.SetBool("Hurt", false);
@@ -549,7 +580,7 @@ public class JogadorScript : MonoBehaviour
         {
             UpgradeTiro = true;
             paraJogadorCut = true;
-            StartCoroutine(Paradinha());
+            StartCoroutine(ParadaUpgrade());
             animator.SetBool("jump", false);
             animator.SetBool("Velocidade2", false);
             animator.SetBool("Hurt", false);
@@ -696,6 +727,11 @@ public class JogadorScript : MonoBehaviour
         yield return new WaitForSeconds(3f);
         paraJogadorCut = false;
     }
+    IEnumerator ParadaUpgrade()
+    {
+        yield return new WaitForSeconds(1.5f);
+        paraJogadorCut = false;
+    }
     IEnumerator ColorDamageChange()
     {
         gameObject.GetComponent<SpriteRenderer>().color = Color.red;
@@ -712,9 +748,11 @@ public class JogadorScript : MonoBehaviour
     }
     void JogadorAtaque()
     {
-        //Debug.Log("entrouAtaque");
+        
+        Debug.Log("entrouAtaque");
         if (UpgradeTiro == false)
         {
+            AudioBater.Play();
             Collider2D[] AtacarInimigo = Physics2D.OverlapCircleAll(verificaAtaque.position, raioAtaque, paraBater);
             Debug.Log("NumeroDeInimigos " + AtacarInimigo.Length);
             for (int i = 0; i < AtacarInimigo.Length; i++)
@@ -726,7 +764,7 @@ public class JogadorScript : MonoBehaviour
         }
         else if (UpgradeTiro)
         {
-            
+            AudioAtirar.Play();
             GameObject cloneTiro =  Instantiate(Tiro, CanoDaArma.transform.position, Quaternion.identity);
             if (face == false)
             {

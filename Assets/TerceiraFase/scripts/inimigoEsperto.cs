@@ -14,7 +14,7 @@ public class inimigoEsperto : MonoBehaviour
     public float distanciaDeDeteccao = 10f;
     public bool face = true;
     public bool limite;
-
+    private Color CorNormal;
 
 
     private void Start()
@@ -24,6 +24,7 @@ public class inimigoEsperto : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         PlayerTransform = GameObject.FindGameObjectWithTag("Player");
+        CorNormal = gameObject.GetComponent<SpriteRenderer>().color;
 
 
     }
@@ -97,6 +98,7 @@ public class inimigoEsperto : MonoBehaviour
     public void acertou(int valor)
     {
         vidaInimigo = vidaInimigo - valor;
+        StartCoroutine(ColorDamageChange());
     }
 
     void Flip()
@@ -104,4 +106,13 @@ public class inimigoEsperto : MonoBehaviour
         face = !face;
         sprite.flipX = !sprite.flipX;
     }
+
+    IEnumerator ColorDamageChange()
+    {
+
+        gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        yield return new WaitForSeconds(0.2f);
+        gameObject.GetComponent<SpriteRenderer>().color = CorNormal;
+    }
+
 }

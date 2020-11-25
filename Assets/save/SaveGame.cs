@@ -45,30 +45,36 @@ public class SaveGame : MonoBehaviour
             VideoPlayer.SetActive(false);
             dataP = Path.Combine(Application.dataPath, "infos.json"); // criando o diretorio do arquivo na raiz do projeto e com nome infos.json
             dados = new infos();
-            string nomeCenaAtiva = SceneManager.GetActiveScene().name;
-            if (nomeCenaAtiva.Equals("Ferro Velho") || nomeCenaAtiva.Equals("Cidade") || nomeCenaAtiva.Equals("TerceiraFase_teste"))
-            {
-                player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
-            }
+            
 
 
         }
-        else
+        if(Cena.Equals("GameOver")) 
+        {
+            dataP = Path.Combine(Application.dataPath, "infos.json"); // criando o diretorio do arquivo na raiz do projeto e com nome infos.json
+            dados = new infos();
+
+        }
+            if (Cena.Equals("Ferro Velho") || Cena.Equals("Cidade") || Cena.Equals("TerceiraFase_teste") )
+            {
+            dataP = Path.Combine(Application.dataPath, "infos.json"); // criando o diretorio do arquivo na raiz do projeto e com nome infos.json
+            dados = new infos();
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
+            }
+        if(Cena.Equals("configuracao"))
         {
 
             dataP = Path.Combine(Application.dataPath, "infos.json"); // criando o diretorio do arquivo na raiz do projeto e com nome infos.json
             dados = new infos();
-            string nomeCenaAtiva = SceneManager.GetActiveScene().name;
-            if (nomeCenaAtiva.Equals("Ferro Velho") || nomeCenaAtiva.Equals("Cidade") || nomeCenaAtiva.Equals("TerceiraFase_teste"))
-            {
-                //player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
-            }
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
+
         }
     }
     public void salvar()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
 
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
+        Debug.Log(dados.Vida);
         dados.Vida = player.Vida;
         dados.posicaoCheckPoint = player.posicaoCheckPoint;
         dados.checPoint1 = player.checPoint1;
@@ -134,7 +140,6 @@ public class SaveGame : MonoBehaviour
         if (dados.fase == 1)
         {
             SceneManager.LoadScene("Ferro Velho");
-
 
 
             PlayerPrefab.Vida = dados.Vida;
@@ -221,7 +226,7 @@ public class SaveGame : MonoBehaviour
 
     public void VoltarAOJogo()
     {
-
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
         string jsonS = File.ReadAllText(dataP);
         JsonUtility.FromJsonOverwrite(jsonS, dados);
         if (dados.fase == 1)
@@ -229,8 +234,7 @@ public class SaveGame : MonoBehaviour
             SceneManager.LoadScene("Ferro Velho");
 
 
-
-            PlayerPrefab.Vida = 10;
+            PlayerPrefab.Vida = dados.Vida;
             PlayerPrefab.posicaoCheckPoint = dados.posicaoCheckPoint;
             PlayerPrefab.checPoint1 = dados.checPoint1;
             PlayerPrefab.TemCheckPoint = dados.TemCheckPoint;
@@ -256,7 +260,7 @@ public class SaveGame : MonoBehaviour
             SceneManager.LoadScene("Cidade");
 
 
-            PlayerPrefab.Vida = 10;
+            PlayerPrefab.Vida = dados.Vida;
             PlayerPrefab.posicaoCheckPoint = dados.posicaoCheckPoint;
             PlayerPrefab.checPoint1 = dados.checPoint1;
             PlayerPrefab.TemCheckPoint = dados.TemCheckPoint;
@@ -283,7 +287,7 @@ public class SaveGame : MonoBehaviour
 
 
 
-            PlayerPrefab.Vida = 10;
+            PlayerPrefab.Vida = dados.Vida;
             PlayerPrefab.posicaoCheckPoint = dados.posicaoCheckPoint;
             PlayerPrefab.checPoint1 = dados.checPoint1;
             PlayerPrefab.TemCheckPoint = dados.TemCheckPoint;
@@ -331,6 +335,7 @@ public class SaveGame : MonoBehaviour
     {
         string jsonS = JsonUtility.ToJson(dados); // convertendo um objeto de informações a serem salvar em json
         File.WriteAllText(dataP, jsonS);//escrevendo no arquivo json com os dados do objeto em json no diretorio datap.
+       
         PlayerPrefab.Vida = 10;
         PlayerPrefab.posicaoCheckPoint = dados.posicaoCheckPoint;
         PlayerPrefab.checPoint1 = 0;
@@ -339,11 +344,57 @@ public class SaveGame : MonoBehaviour
         PlayerPrefab.speed = 10f;
         PlayerPrefab.forcaPulo = 2400f;
         PlayerPrefab.forcaPuloDuplo = 1300f;
-        PlayerPrefab.KeyAndarDireita = KeyCode.D; ;
-        PlayerPrefab.KeyAndarEsquerda = KeyCode.A;
-        PlayerPrefab.KeyBater = KeyCode.O;
-        PlayerPrefab.KeyInteragir = KeyCode.E;
-        PlayerPrefab.KeyPular = KeyCode.Space;
+
+
+
+        if (PlayerPrefab.KeyAndarDireita == KeyCode.None)
+        {
+           PlayerPrefab.KeyAndarDireita = KeyCode.D;
+        }
+        //if(PlayerPrefab.KeyAndarDireita != KeyCode.None) 
+        //{
+          //  PlayerPrefab.KeyAndarDireita = dados.KeyAndarDireita;
+        //}
+        if (PlayerPrefab.KeyAndarEsquerda == KeyCode.None)
+        {
+            PlayerPrefab.KeyAndarEsquerda = KeyCode.A;
+        }
+        //if(PlayerPrefab.KeyAndarEsquerda != KeyCode.None)
+        //{
+         //   PlayerPrefab.KeyAndarEsquerda = dados.KeyAndarEsquerda;
+        //}
+        if (PlayerPrefab.KeyBater == KeyCode.None)
+        {
+            PlayerPrefab.KeyBater = KeyCode.O;
+        }
+        //if(PlayerPrefab.KeyBater != KeyCode.None)
+        //{
+         //   PlayerPrefab.KeyBater = dados.KeyBater;
+        //}
+        if (PlayerPrefab.KeyInteragir == KeyCode.None)
+        {
+            PlayerPrefab.KeyInteragir = KeyCode.E;
+        }
+        //if(PlayerPrefab.KeyInteragir != KeyCode.None)
+        //{
+        //    PlayerPrefab.KeyInteragir = dados.KeyInteragir;
+        //}
+        if (PlayerPrefab.KeyPular == KeyCode.None)
+        {
+            PlayerPrefab.KeyPular = KeyCode.W;
+        }
+        //if(PlayerPrefab.KeyPular != KeyCode.None)
+        //{
+          //  PlayerPrefab.KeyPular = dados.KeyPular;
+        //}
+
+
+
+
+
+
+
+        
         PlayerPrefab.puloDuplo = false;
         PlayerPrefab.UpgradeTiro = false;
         PlayerPrefab.Awake = true;
@@ -376,43 +427,6 @@ public class SaveGame : MonoBehaviour
 
 
 
-    public string retornaStringKeys(string Key) 
-    {
-        if (Key.Equals("KeyAndarDireita"))
-        {
-            return dados.KeyAndarDireita.ToString();
-        }
-        else if (Key.Equals("KeyAndarEsquerda")) 
-        {
-            return dados.KeyAndarDireita.ToString();
-        
-        }
-        else if (Key.Equals("KeyPular"))
-        {
-            return dados.KeyPular.ToString();
-
-        }
-        else if (Key.Equals("KeyBater"))
-        {
-            return dados.KeyBater.ToString();
-
-        }
-        else if (Key.Equals("KeyInteragir"))
-        {
-            return dados.KeyInteragir.ToString();
-
-        }
-        else 
-        {
-            return "erro";
-        }
-
-
-    }
-
-
-
-
 }
 
 
@@ -438,4 +452,5 @@ public class infos
     public bool Idle;
     public bool ParadoComBota;
     public bool ParadoComBotaEArma;
+    
 }

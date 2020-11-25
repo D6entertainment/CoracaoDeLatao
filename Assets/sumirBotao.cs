@@ -10,9 +10,16 @@ public class sumirBotao : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // botao = GetComponent<Button>();
+        if (player.checPoint1 > 0)
+        {
+            botao.interactable = true;
+        }
+        else
+        {
+            botao.interactable = false;
+        }
 
-       
+
     }
 
     // Update is called once per frame
