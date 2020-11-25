@@ -154,13 +154,13 @@ public class JogadorScript : MonoBehaviour
         
         VideoPlayerOBJFinalFase1.SetActive(false);
 
-        if (Vida < 10) 
-        {
-            int x = 10 - Vida;
-            Vida = 10;
-            DamageTaked(x);
+       // if (Vida < 10) 
+       // {
+        //    int x = 10 - Vida;
+       //     Vida = 10;
+       //     DamageTaked(x);
            
-        }
+       // }
 
     }
 

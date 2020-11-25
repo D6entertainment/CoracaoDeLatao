@@ -8845,7 +8845,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PausePanel: {fileID: 1863031930}
-  m_tutorialPanel: {fileID: 0}
   player: {fileID: 0}
 --- !u!4 &650456984
 Transform:
@@ -43158,12 +43157,12 @@ PrefabInstance:
     - target: {fileID: 8255836698301071689, guid: df247fb7524a8324da5f0707a5371271,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 451
+      value: 446.69998
       objectReference: {fileID: 0}
     - target: {fileID: 8255836698301071689, guid: df247fb7524a8324da5f0707a5371271,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -14.8
+      value: -15.5
       objectReference: {fileID: 0}
     - target: {fileID: 8255836698301071689, guid: df247fb7524a8324da5f0707a5371271,
         type: 3}

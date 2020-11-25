@@ -176,6 +176,8 @@ MonoBehaviour:
   tempoTomarDano: 2
   Salvando: {fileID: 0}
   TempoTextSalvandoNaTela: 2
+  Tutorial: {fileID: 0}
+  cenaAtiva: 
   verificaAtaque: {fileID: 320624490492933731}
   raioAtaque: 2.5
   paraBater:
