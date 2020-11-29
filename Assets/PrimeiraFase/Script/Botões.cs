@@ -79,5 +79,9 @@ public class Botões : MonoBehaviour
         SceneManager.LoadScene("Tutorial");
     
     }
+    public void fase3()
+    {
+        SceneManager.LoadScene("TerceiraFase_teste");
+    }
 
 }

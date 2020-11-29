@@ -70,7 +70,7 @@ public class SaveGame : MonoBehaviour
     public void salvar()
     {
 
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
+       // player = GameObject.FindGameObjectWithTag("Player").GetComponent<JogadorScript>();
         Debug.Log(dados.Vida);
         dados.Vida = player.Vida;
         dados.posicaoCheckPoint = player.posicaoCheckPoint;

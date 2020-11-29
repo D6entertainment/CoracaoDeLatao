@@ -106,11 +106,13 @@ public class JogadorScript : MonoBehaviour
 
     [Header("Vídeo")]
     public GameObject VideoPlayerOBJFinalFase1;
-    public float timeToStop = 34.0f;
+    public GameObject VideoPlayerOBJFinalFase3;
+    public float timeToStop;
     public float timeToPlay;
     public bool fimCut;
     public Mutar Mutando;
     private bool TocaVideo = false;
+    private bool TocaVideoFinal = false;
     private VideoPlayer videoPlayer;
 
     void Start()
@@ -148,10 +150,11 @@ public class JogadorScript : MonoBehaviour
 
         Mutando = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Mutar>();
         videoPlayer = VideoPlayerOBJFinalFase1.GetComponent<VideoPlayer>();
+        videoPlayer = VideoPlayerOBJFinalFase3.GetComponent<VideoPlayer>();
         videoPlayer.targetCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         cenaAtiva = SceneManager.GetActiveScene().name;
 
-        
+        VideoPlayerOBJFinalFase3.SetActive(false);
         VideoPlayerOBJFinalFase1.SetActive(false);
 
        // if (Vida < 10) 
@@ -180,6 +183,15 @@ public class JogadorScript : MonoBehaviour
             {
 
                 SaveGame.carrregar();
+            }
+        }
+        if (TocaVideoFinal) 
+        {
+            timeToStop -= Time.deltaTime;
+            if (timeToStop <= 0f)
+            {
+                Time.timeScale = 1;
+                SceneManager.LoadScene("Creditos");
             }
         }
 
@@ -420,11 +432,11 @@ public class JogadorScript : MonoBehaviour
         if (collision.CompareTag("FimFase2"))
         {
 
-            fase += 1;
+            fase = 3;
             Mutando.Mutado = true;
-            //video();
+           
+            videoFaseFinal();
             SaveGame.salvar();
-            SceneManager.LoadScene("Menu");
         }
 
         if (collision.CompareTag("checPoint"))
@@ -555,10 +567,7 @@ public class JogadorScript : MonoBehaviour
             paraJogadorCut = true;
         }
 
-        if (collision.gameObject.tag == "Fim")
-        {
-            SceneManager.LoadScene("Continua");
-        }
+
         if (collision.CompareTag("UpgradePerna"))
         {
             paraJogadorCut = true;
@@ -609,6 +618,15 @@ public class JogadorScript : MonoBehaviour
         TocaVideo = true;
 
     }
+    public void videoFaseFinal() 
+    {
+        timeToPlay = timeToStop - 0.1f;
+        VideoPlayerOBJFinalFase3.SetActive(true);
+        timeToStop = 62.0f;
+        TocaVideoFinal = true;
+
+    }
+
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Ausapao"))
@@ -727,6 +745,11 @@ public class JogadorScript : MonoBehaviour
         yield return new WaitForSeconds(3f);
         paraJogadorCut = false;
     }
+    IEnumerator TempoDeEspera(float tempo)
+    {
+        yield return new WaitForSeconds(tempo);
+        timeToStop = 0.0f;
+    }
     IEnumerator ParadaUpgrade()
     {
         yield return new WaitForSeconds(1.5f);
@@ -752,14 +775,13 @@ public class JogadorScript : MonoBehaviour
         Debug.Log("entrouAtaque");
         if (UpgradeTiro == false)
         {
-            AudioBater.Play();
             Collider2D[] AtacarInimigo = Physics2D.OverlapCircleAll(verificaAtaque.position, raioAtaque, paraBater);
             Debug.Log("NumeroDeInimigos " + AtacarInimigo.Length);
             for (int i = 0; i < AtacarInimigo.Length; i++)
             {
                 AtacarInimigo[i].SendMessage("acertou", 1);
-                //Debug.Log(i);
-               // Debug.Log("atacando");
+                 AudioBater.Play();
+              
             }
         }
         else if (UpgradeTiro)
