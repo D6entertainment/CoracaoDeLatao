@@ -113,7 +113,8 @@ public class JogadorScript : MonoBehaviour
     public Mutar Mutando;
     private bool TocaVideo = false;
     private bool TocaVideoFinal = false;
-    private VideoPlayer videoPlayer;
+    private VideoPlayer videoPlayerFinalFase1;
+    private VideoPlayer videoPlayerFinalFase3;
 
     void Start()
     {
@@ -149,9 +150,10 @@ public class JogadorScript : MonoBehaviour
         MensagemNaTela.enabled = false;
 
         Mutando = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Mutar>();
-        videoPlayer = VideoPlayerOBJFinalFase1.GetComponent<VideoPlayer>();
-        videoPlayer = VideoPlayerOBJFinalFase3.GetComponent<VideoPlayer>();
-        videoPlayer.targetCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        videoPlayerFinalFase1 = VideoPlayerOBJFinalFase1.GetComponent<VideoPlayer>();
+        videoPlayerFinalFase3 = VideoPlayerOBJFinalFase3.GetComponent<VideoPlayer>();
+        videoPlayerFinalFase1.targetCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
+        videoPlayerFinalFase3.targetCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         cenaAtiva = SceneManager.GetActiveScene().name;
 
         VideoPlayerOBJFinalFase3.SetActive(false);
