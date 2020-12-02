@@ -41,6 +41,7 @@ TagManager:
   - checPoint7
   - checPoint8
   - Vida
+  - daDano2
   layers:
   - Default
   - TransparentFX

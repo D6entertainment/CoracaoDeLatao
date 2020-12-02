@@ -97,6 +97,7 @@ public class inimigoEsperto : MonoBehaviour
 
     public void acertou(int valor)
     {
+        Debug.Log("TESTE" + valor);
         vidaInimigo = vidaInimigo - valor;
         StartCoroutine(ColorDamageChange());
     }

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 785775515297198892}
   m_Layer: 11
   m_Name: InimigoAlto
-  m_TagString: daDano
+  m_TagString: daDano2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,6 +117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidade: 2
   vidaInimigo: 3
+  PlayerTransform: {fileID: 0}
   distanciaDeDeteccao: 10
   face: 1
   limite: 0

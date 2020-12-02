@@ -6,10 +6,12 @@ public class Tiro : MonoBehaviour
 {
     public float Speed = 10;
     public Inimigo inimigo;
+    public inimigoEsperto inimigoEsperto;
     public int DanoTiro = 1;
     private void Start()
     {
-        inimigo = GameObject.FindGameObjectWithTag("daDano").GetComponent<Inimigo>();
+       // inimigo = GameObject.FindGameObjectWithTag("daDano").GetComponent<Inimigo>();
+       // inimigoEsperto = GameObject.FindGameObjectWithTag("daDano2").GetComponent<inimigoEsperto>();
         
     }
     private void Update()
@@ -31,10 +33,17 @@ public class Tiro : MonoBehaviour
     {
         if (collision.CompareTag("daDano"))
         {
+            inimigo = collision.GetComponent<Inimigo>();
             inimigo.acertou(DanoTiro);
             Destroy(transform.gameObject);
         }
 
+        if (collision.CompareTag("daDano2"))
+        {
+            inimigoEsperto = collision.GetComponent<inimigoEsperto>();
+            inimigoEsperto.acertou(DanoTiro);
+            Destroy(transform.gameObject);
+        }
     }
 
 
